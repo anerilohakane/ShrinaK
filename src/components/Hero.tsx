@@ -75,7 +75,7 @@ export default function Hero() {
           </p>
           
           <div style={{ display: 'flex', gap: '1rem', marginBottom: '4rem' }}>
-            <Link href="#contact" className="btn" style={{ 
+            <a href="https://wa.me/918979797220?text=Hello,%20I%20would%20like%20to%20book%20a%20consultation" target="_blank" rel="noopener noreferrer" className="btn" style={{ 
               background: 'var(--accent)', 
               color: 'var(--primary)', 
               padding: '0.8rem 1.5rem', 
@@ -84,11 +84,12 @@ export default function Hero() {
               borderRadius: '9999px',
               display: 'flex',
               alignItems: 'center',
-              gap: '0.5rem'
+              gap: '0.5rem',
+              textDecoration: 'none'
             }}>
               Book a Consultation <span>→</span>
-            </Link>
-            <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer" className="btn" style={{ 
+            </a>
+            <a href="#treatments" className="btn" style={{ 
               background: 'rgba(255,255,255,0.1)', 
               color: '#fff', 
               border: '1px solid rgba(255,255,255,0.3)', 
@@ -97,9 +98,10 @@ export default function Hero() {
               display: 'flex',
               alignItems: 'center',
               gap: '0.5rem',
-              fontSize: '0.9rem'
+              fontSize: '0.9rem',
+              textDecoration: 'none'
             }}>
-              <span style={{ color: '#25D366' }}>💬</span> WhatsApp Us
+              Explore Treatments
             </a>
           </div>
 

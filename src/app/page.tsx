@@ -5,7 +5,6 @@ import Treatments from "../components/Treatments";
 import Results from "../components/Results";
 import Experience from "../components/Experience";
 import WhyChooseUs from "../components/WhyChooseUs";
-import Pricing from "../components/Pricing";
 import Testimonials from "../components/Testimonials";
 import Contact from "../components/Contact";
 
@@ -30,35 +29,22 @@ export default function Home() {
               <li><Link href="#about" style={{ color: '#fff', fontSize: '0.9rem', textDecoration: 'none' }}>About</Link></li>
               <li><Link href="#treatments" style={{ color: '#fff', fontSize: '0.9rem', textDecoration: 'none' }}>Treatments</Link></li>
               <li><Link href="#results" style={{ color: '#fff', fontSize: '0.9rem', textDecoration: 'none' }}>Results</Link></li>
-              <li><Link href="#pricing" style={{ color: '#fff', fontSize: '0.9rem', textDecoration: 'none' }}>Pricing</Link></li>
               <li><Link href="#contact" style={{ color: '#fff', fontSize: '0.9rem', textDecoration: 'none' }}>Contact</Link></li>
             </ul>
           </nav>
           
           <div style={{ display: 'flex', gap: '1rem', alignItems: 'center' }}>
-            <a href="https://wa.me/1234567890" target="_blank" rel="noopener noreferrer" className="btn" style={{ 
-              background: 'transparent', 
-              color: '#fff', 
-              border: '1px solid rgba(255,255,255,0.3)', 
-              borderRadius: '9999px',
-              padding: '0.6rem 1.25rem',
-              display: 'flex',
-              alignItems: 'center',
-              gap: '0.5rem',
-              fontSize: '0.85rem'
-            }}>
-              <span style={{ fontSize: '1.2rem', color: '#25D366' }}>💬</span> WhatsApp
-            </a>
-            <Link href="#contact" className="btn" style={{ 
+            <a href="https://wa.me/918979797220?text=Hello,%20I%20would%20like%20to%20book%20a%20consultation" target="_blank" rel="noopener noreferrer" className="btn" style={{ 
               background: '#2B4034', 
               color: '#fff', 
               borderRadius: '9999px',
               padding: '0.6rem 1.25rem',
               fontSize: '0.85rem',
-              border: '1px solid rgba(255,255,255,0.1)'
+              border: '1px solid rgba(255,255,255,0.1)',
+              textDecoration: 'none'
             }}>
               Book Consultation
-            </Link>
+            </a>
           </div>
         </div>
       </header>
@@ -70,7 +56,6 @@ export default function Home() {
         <Results />
         <Experience />
         <WhyChooseUs />
-        <Pricing />
         <Testimonials />
         <Contact />
       </main>
@@ -85,7 +70,6 @@ export default function Home() {
               <Link href="#about" style={{ color: 'rgba(255,255,255,0.6)', fontSize: '0.8rem', textDecoration: 'none' }}>About</Link>
               <Link href="#treatments" style={{ color: 'rgba(255,255,255,0.6)', fontSize: '0.8rem', textDecoration: 'none' }}>Treatments</Link>
               <Link href="#results" style={{ color: 'rgba(255,255,255,0.6)', fontSize: '0.8rem', textDecoration: 'none' }}>Results</Link>
-              <Link href="#pricing" style={{ color: 'rgba(255,255,255,0.6)', fontSize: '0.8rem', textDecoration: 'none' }}>Pricing</Link>
               <Link href="#contact" style={{ color: 'rgba(255,255,255,0.6)', fontSize: '0.8rem', textDecoration: 'none' }}>Contact</Link>
            </div>
            

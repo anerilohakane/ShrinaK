@@ -1,25 +1,47 @@
-"use client";
-
 import Image from "next/image";
+import connectToDatabase from "@/lib/mongodb";
+import Review from "@/models/Review";
 
-export default function Testimonials() {
-  const testimonials = [
+export default async function Testimonials() {
+  const initialData = [
     {
       name: "Aarti Mehta",
       text: `"The entire experience was so comfortable and professional. My skin has never looked better. Highly recommend Shrina K!"`,
-      stars: "★★★★★"
+      stars: "★★★★★",
+      imageUrl: "/doctor_shrina.jpg"
     },
     {
       name: "Rohan Sharma",
-      text: `"Noticeable results and a very supportive team. Dr. Shrina K truly understands her patients."`,
-      stars: "★★★★★"
+      text: `"Noticeable results and a very supportive team. Dr. Sneha Wanve truly understands her patients."`,
+      stars: "★★★★★",
+      imageUrl: "/doctor_shrina.jpg"
     },
     {
       name: "Neha Kapoor",
       text: `"A beautiful clinic with a warm atmosphere. The treatments are effective and completely safe."`,
-      stars: "★★★★★"
+      stars: "★★★★★",
+      imageUrl: "/doctor_shrina.jpg"
     }
   ];
+
+  let testimonials = initialData;
+
+  try {
+    await connectToDatabase();
+    
+    let dbReviews = await Review.find().sort({ createdAt: -1 }).lean();
+
+    if (dbReviews.length === 0) {
+      await Review.insertMany(initialData);
+      dbReviews = await Review.find().sort({ createdAt: -1 }).lean();
+    }
+    
+    if (dbReviews.length > 0) {
+      testimonials = dbReviews as any;
+    }
+  } catch (error) {
+    console.warn("MongoDB Connection failed. Falling back to static testimonials.", error);
+  }
 
   return (
     <section style={{ background: 'var(--background)', padding: '6rem 0' }}>
@@ -45,7 +67,7 @@ export default function Testimonials() {
         </div>
 
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '2rem' }}>
-          {testimonials.map((t, i) => (
+          {testimonials.map((t: any, i: number) => (
             <div key={i} style={{ 
               background: '#FFFFFF', 
               padding: '2rem', 
@@ -57,7 +79,7 @@ export default function Testimonials() {
             }}>
                <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
                  <div style={{ width: '48px', height: '48px', borderRadius: '50%', overflow: 'hidden', position: 'relative' }}>
-                   <Image src="/doctor_shrina.jpg" alt={t.name} fill style={{ objectFit: 'cover' }} />
+                   <Image src={t.imageUrl || "/doctor_shrina.jpg"} alt={t.name} fill style={{ objectFit: 'cover' }} />
                  </div>
                  <div>
                    <h4 style={{ fontSize: '0.9rem', fontWeight: '600', color: 'var(--text-primary)', marginBottom: '0.25rem' }}>{t.name}</h4>
