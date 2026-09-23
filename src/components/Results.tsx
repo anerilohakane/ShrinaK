@@ -42,7 +42,7 @@ export default function Results() {
         </div>
 
         {/* Horizontal Image Grid */}
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '1.5rem' }}>
+        <div className="horizontal-scroll-mobile" style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '1.5rem' }}>
            {images.map((src, idx) => (
              <div key={idx} style={{ position: 'relative', height: '400px', borderRadius: '12px', overflow: 'hidden', border: '1px solid rgba(255,255,255,0.1)' }}>
                <Image 
