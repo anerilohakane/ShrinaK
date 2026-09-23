@@ -21,7 +21,7 @@ export default function WhyChooseUs() {
           marginBottom: '4rem'
         }}>Why Choose Shrina K?</h3>
 
-        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', textAlign: 'center', gap: '2rem' }}>
+        <div className="grid-responsive-4">
           {reasons.map((item, i) => (
              <div key={i} style={{ flex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
                 <div style={{ 

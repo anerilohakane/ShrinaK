@@ -130,6 +130,57 @@ section {
   margin: 0 auto 4rem;
 }
 
+/* Responsive Grid Utilities */
+.grid-responsive-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; }
+.grid-responsive-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 3rem; }
+.grid-responsive-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem; }
+.grid-responsive-5 { display: grid; grid-template-columns: repeat(5, 1fr); gap: 1.5rem; }
+.grid-responsive-contact { display: grid; grid-template-columns: 1fr 1.5fr 1fr; gap: 3rem; }
+.grid-responsive-experience { display: grid; grid-template-columns: 1.1fr 1fr; gap: 6rem; align-items: center; }
+.grid-responsive-footer { display: grid; grid-template-columns: 2fr 1fr 1fr 1.5fr; gap: 4rem; margin-bottom: 4rem; }
+.flex-responsive-stack { display: flex; flex-direction: row; }
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .grid-responsive-2, 
+  .grid-responsive-3, 
+  .grid-responsive-4, 
+  .grid-responsive-5,
+  .grid-responsive-contact, 
+  .grid-responsive-experience, 
+  .grid-responsive-footer {
+    grid-template-columns: 1fr !important;
+    gap: 3rem !important;
+  }
+  .flex-responsive-stack {
+    flex-direction: column !important;
+  }
+  section {
+    padding: 4rem 0;
+  }
+  .hero {
+    padding-top: 8rem !important;
+  }
+  .container {
+    padding: 0 1.5rem !important;
+  }
+  .hide-on-mobile {
+    display: none !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .grid-responsive-2, 
+  .grid-responsive-3, 
+  .grid-responsive-4, 
+  .grid-responsive-5,
+  .grid-responsive-contact, 
+  .grid-responsive-experience, 
+  .grid-responsive-footer {
+    gap: 2rem !important;
+  }
+}
+
 /* Header */
 .header {
   position: fixed;
@@ -178,6 +229,17 @@ section {
 
 @media (max-width: 768px) {
   .nav-links { display: none; }
+}
+
+.hero-right-content {
+  text-align: center;
+  margin-top: 10rem;
+}
+@media (max-width: 1024px) {
+  .hero-right-content { margin-top: 4rem; }
+}
+@media (max-width: 768px) {
+  .hero-right-content { margin-top: 2rem; }
 }
 
 /* Generate Images Placeholders styling */

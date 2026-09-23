@@ -24,7 +24,7 @@ export default function Home() {
           </Link>
           
           <nav>
-            <ul className="nav-links" style={{ display: 'flex', gap: '2rem', listStyle: 'none' }}>
+            <ul className="nav-links" style={{ gap: '2rem', listStyle: 'none' }}>
               <li><Link href="#home" style={{ color: '#fff', fontSize: '0.9rem', textDecoration: 'none' }}>Home</Link></li>
               <li><Link href="#about" style={{ color: '#fff', fontSize: '0.9rem', textDecoration: 'none' }}>About</Link></li>
               <li><Link href="#treatments" style={{ color: '#fff', fontSize: '0.9rem', textDecoration: 'none' }}>Treatments</Link></li>
@@ -33,7 +33,7 @@ export default function Home() {
             </ul>
           </nav>
           
-          <div style={{ display: 'flex', gap: '1rem', alignItems: 'center' }}>
+          <div className="hide-on-mobile" style={{ display: 'flex', gap: '1rem', alignItems: 'center' }}>
             <a href="https://wa.me/918979797220?text=Hello,%20I%20would%20like%20to%20book%20a%20consultation" target="_blank" rel="noopener noreferrer" className="btn" style={{ 
               background: '#2B4034', 
               color: '#fff', 
@@ -62,7 +62,7 @@ export default function Home() {
       
       <footer style={{ background: 'var(--primary)', color: 'white', padding: '5rem 0 2rem 0' }}>
         <div className="container">
-           <div style={{ display: 'grid', gridTemplateColumns: '2fr 1fr 1fr 1.5fr', gap: '4rem', marginBottom: '4rem' }}>
+           <div className="grid-responsive-footer">
               
               {/* Brand Column */}
               <div>
@@ -114,7 +114,7 @@ export default function Home() {
 
            </div>
            
-           <div style={{ fontSize: '0.8rem', color: 'rgba(255,255,255,0.4)', borderTop: '1px solid rgba(255,255,255,0.1)', paddingTop: '2rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+           <div className="flex-responsive-stack" style={{ fontSize: '0.8rem', color: 'rgba(255,255,255,0.4)', borderTop: '1px solid rgba(255,255,255,0.1)', paddingTop: '2rem', justifyContent: 'space-between', alignItems: 'center', gap: '1rem' }}>
              <span>© {new Date().getFullYear()} Shrina K Beauty Clinic. All rights reserved.</span>
              <span style={{ fontSize: '1.2rem', fontFamily: 'var(--font-cursive)', color: 'var(--accent)', opacity: 0.8 }}>Confident You</span>
            </div>

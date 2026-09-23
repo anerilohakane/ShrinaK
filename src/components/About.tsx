@@ -65,7 +65,7 @@ export default function About() {
         </div>
 
         {/* Founders Section (2 Columns) */}
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '5rem', marginBottom: '8rem' }}>
+        <div className="grid-responsive-2" style={{ marginBottom: '8rem' }}>
           
           {/* Founder 1 */}
           <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
@@ -121,7 +121,7 @@ export default function About() {
         </div>
 
         {/* Team Grid (3 Columns) */}
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '3rem' }}>
+        <div className="grid-responsive-3">
           {teamMembers.map((member, index) => (
             <div key={index} style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem', textAlign: 'center' }}>
               <div style={{ position: 'relative', height: '400px', borderRadius: '12px', overflow: 'hidden', boxShadow: '0 10px 20px rgba(0,0,0,0.05)' }}>

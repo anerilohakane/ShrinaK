@@ -13,7 +13,7 @@ export default function Contact() {
   };
   return (
     <section id="contact" style={{ background: '#FFFFFF', padding: '6rem 0' }}>
-      <div className="container" style={{ display: 'grid', gridTemplateColumns: '1fr 1.5fr 1fr', gap: '3rem' }}>
+      <div className="container grid-responsive-contact">
         
         {/* Left Column: Contact Info */}
         <div>

@@ -66,7 +66,7 @@ export default async function Testimonials() {
           }}>What Our Patients Say</h2>
         </div>
 
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '2rem' }}>
+        <div className="grid-responsive-3">
           {testimonials.map((t: any, i: number) => (
             <div key={i} style={{ 
               background: '#FFFFFF', 

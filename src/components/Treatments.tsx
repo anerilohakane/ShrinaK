@@ -60,7 +60,7 @@ export default function Treatments() {
         </div>
 
         {/* Cards Area */}
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(5, 1fr)', gap: '1.5rem' }}>
+        <div className="grid-responsive-5">
           {treatments.map((t, i) => (
             <div key={i} style={{
               position: 'relative',
@@ -144,7 +144,7 @@ export default function Treatments() {
             marginBottom: '4rem'
           }}>Explore Our Full Range of Treatments</h3>
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(5, 1fr)', gap: '3rem', alignItems: 'start' }}>
+          <div className="grid-responsive-5" style={{ alignItems: 'start', gap: '3rem' }}>
 
             {/* SKIN */}
             <div>

@@ -33,7 +33,7 @@ export default function Hero() {
       </motion.div>
 
       {/* Foreground Content */}
-      <div className="container" style={{ position: 'relative', zIndex: 10, display: 'flex', justifyContent: 'space-between', alignItems: 'center', width: '100%' }}>
+      <div className="container flex-responsive-stack" style={{ position: 'relative', zIndex: 10, justifyContent: 'space-between', alignItems: 'center', width: '100%', gap: '4rem' }}>
         
         {/* Left Content */}
         <motion.div
@@ -53,7 +53,7 @@ export default function Hero() {
           }}>Beauty Beyond Skin</span>
           
           <h1 style={{ 
-            fontSize: 'clamp(3.5rem, 6vw, 5rem)', 
+            fontSize: 'clamp(3rem, 6vw, 5rem)', 
             lineHeight: '1.1', 
             marginBottom: '1.5rem', 
             color: '#FFFFFF',
@@ -74,7 +74,7 @@ export default function Hero() {
             Advanced aesthetic care for healthier skin, happier you.
           </p>
           
-          <div style={{ display: 'flex', gap: '1rem', marginBottom: '4rem' }}>
+          <div style={{ display: 'flex', gap: '1rem', marginBottom: '4rem', flexWrap: 'wrap' }}>
             <a href="https://wa.me/918979797220?text=Hello,%20I%20would%20like%20to%20book%20a%20consultation" target="_blank" rel="noopener noreferrer" className="btn" style={{ 
               background: 'var(--accent)', 
               color: 'var(--primary)', 
@@ -106,7 +106,7 @@ export default function Hero() {
           </div>
 
           {/* Features Bar */}
-          <div style={{ display: 'flex', gap: '2rem' }}>
+          <div style={{ display: 'flex', gap: '1.5rem', flexWrap: 'wrap' }}>
              {[
                { icon: '⭐', text: 'Personalized Care' },
                { icon: '⚙️', text: 'Advanced Technology' },
@@ -127,7 +127,7 @@ export default function Hero() {
           initial={{ x: 30, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           transition={{ duration: 1, delay: 0.6, ease: "easeOut" }}
-          style={{ textAlign: 'center', marginTop: '10rem' }}
+          className="hero-right-content"
         >
            <h2 style={{ 
              fontFamily: 'var(--font-cursive)', 

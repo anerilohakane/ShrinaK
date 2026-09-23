@@ -8,7 +8,7 @@ export default function Experience() {
       {/* Decorative Background Element */}
       <div style={{ position: 'absolute', top: '-10%', right: '-5%', width: '400px', height: '400px', borderRadius: '50%', background: 'var(--primary)', opacity: 0.03, filter: 'blur(60px)' }}></div>
       
-      <div className="container" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '6rem', alignItems: 'center', position: 'relative', zIndex: 1 }}>
+      <div className="container grid-responsive-experience" style={{ position: 'relative', zIndex: 1 }}>
         
         {/* Left Column: Artistic Image Layout */}
         <div style={{ position: 'relative', height: '700px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
@@ -84,7 +84,7 @@ export default function Experience() {
             Step into a sanctuary designed exclusively for your comfort, care, and confidence. Our clinic flawlessly blends advanced aesthetic technology with a deeply calming environment, ensuring your journey feels just as beautiful as the results.
           </p>
           
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '2rem', marginBottom: '3rem' }}>
+          <div className="grid-responsive-2" style={{ marginBottom: '3rem' }}>
             {[
               { title: "Relaxing Ambiance", desc: "A calming, immaculate space designed for peace." },
               { title: "Advanced Tech", desc: "State-of-the-art, evidence-based treatments." },
