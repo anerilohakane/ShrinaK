@@ -76,8 +76,8 @@ export default function Treatments() {
                 cursor: 'pointer',
                 transition: 'transform 0.3s',
               }}
-              onMouseEnter={(e) => (e.currentTarget.style.transform = 'translateY(-10px)')}
-              onMouseLeave={(e) => (e.currentTarget.style.transform = 'translateY(0)')}
+                onMouseEnter={(e) => (e.currentTarget.style.transform = 'translateY(-10px)')}
+                onMouseLeave={(e) => (e.currentTarget.style.transform = 'translateY(0)')}
               >
                 {/* Background Image */}
                 <Image
@@ -127,85 +127,164 @@ export default function Treatments() {
           ))}
         </div>
 
-        {/* Detailed Treatment List */}
-        <div style={{ marginTop: '8rem', background: '#fff', padding: '4rem', borderRadius: '24px', boxShadow: '0 4px 40px rgba(0,0,0,0.03)' }}>
-          <h3 style={{
-            fontFamily: 'var(--font-heading)',
-            fontSize: '2.5rem',
-            color: 'var(--primary)',
-            fontWeight: '400',
-            textAlign: 'center',
-            marginBottom: '4rem'
-          }}>Explore Our Full Range of Treatments</h3>
+        {/* Our Best Services Section */}
+        <div style={{ marginTop: '10rem' }}>
 
-          <div className="grid-responsive-4" style={{ alignItems: 'start', gap: '3rem', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))' }}>
+          <div style={{ marginBottom: '4rem' }}>
+            <span style={{
+              display: 'inline-block',
+              border: '1px solid #B69359',
+              color: '#B69359',
+              padding: '0.5rem 1.5rem',
+              borderRadius: '9999px',
+              fontSize: '0.8rem',
+              fontWeight: '600',
+              letterSpacing: '0.15em',
+              textTransform: 'uppercase',
+              marginBottom: '2rem'
+            }}>
+              SERVICES
+            </span>
+            <h2 style={{
+              fontFamily: 'var(--font-heading)',
+              fontSize: 'clamp(3rem, 5vw, 4.5rem)',
+              color: 'var(--primary)',
+              fontWeight: '400',
+              lineHeight: '1.1',
+              margin: 0
+            }}>
+              Our <span style={{ color: '#B69359' }}>Best Services</span>
+            </h2>
+          </div>
 
-            {/* HAIR */}
-            <div>
-              <h4 style={{ fontSize: '1.2rem', fontWeight: '700', color: '#1a2942', marginBottom: '1.5rem', textTransform: 'uppercase' }}>HAIR</h4>
-              <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '0.8rem' }}>
-                {["GFC", "Exosomes", "PRP", "Meso", "Korean Scalp Treatment", "Microneedling"].map((item, i) => {
-                  const itemSlug = item.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
-                  return (
-                    <li key={i}>
-                      <Link href={`/treatments/${itemSlug}`} style={{ color: '#555', fontSize: '0.95rem', display: 'flex', alignItems: 'flex-start', gap: '0.75rem', textDecoration: 'none', transition: 'color 0.2s' }} onMouseEnter={(e) => e.currentTarget.style.color = 'var(--accent-dark)'} onMouseLeave={(e) => e.currentTarget.style.color = '#555'}>
-                        <span style={{ color: '#B69359', fontSize: '1.2rem', marginTop: '-4px' }}>•</span> {item}
-                      </Link>
-                    </li>
-                  );
-                })}
-              </ul>
+          <div className="grid-responsive-3" style={{ gap: '2rem' }}>
+
+            {/* Card 1 */}
+            <div style={{ background: '#FCFAF5', borderRadius: '32px', display: 'flex', flexDirection: 'column', overflow: 'hidden', height: '600px', boxShadow: '0 4px 20px rgba(0,0,0,0.02)' }}>
+              <div style={{ padding: '3rem 2.5rem', flex: 1 }}>
+                <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: '2rem', color: '#B69359', marginBottom: '1.5rem', fontWeight: '400' }}>
+                  Consultation
+                </h3>
+                <p style={{ color: 'var(--text-primary)', fontSize: '1.05rem', lineHeight: '1.6', fontWeight: '400' }}>
+                  Our skincare consultation identifies your skin type, concerns, and goals to create a personalized skincare plan for you.
+                </p>
+              </div>
+              <div style={{ position: 'relative', height: '250px', width: '100%' }}>
+                <Image
+                  src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&q=80&w=800"
+                  alt="Consultation"
+                  fill
+                  style={{ objectFit: 'cover', borderTopLeftRadius: '24px', borderTopRightRadius: '24px' }}
+                />
+              </div>
             </div>
 
-            {/* SKIN */}
-            <div>
-              <h4 style={{ fontSize: '1.2rem', fontWeight: '700', color: '#1a2942', marginBottom: '1.5rem', textTransform: 'uppercase' }}>SKIN</h4>
-              <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '0.8rem' }}>
-                {["Hydra Facial", "Carbon Laser", "Chemical Peels", "Face PRP", "Face Microneedling", "Subcision", "MNRF", "Laser Hair Reduction", "Mummy Mask Facial", "Glutathione IV Drip", "Fat Loss IV Drip", "Mole Removal", "Korean Peel"].map((item, i) => {
-                  const itemSlug = item.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
-                  return (
-                    <li key={i}>
-                      <Link href={`/treatments/${itemSlug}`} style={{ color: '#555', fontSize: '0.95rem', display: 'flex', alignItems: 'flex-start', gap: '0.75rem', textDecoration: 'none', transition: 'color 0.2s' }} onMouseEnter={(e) => e.currentTarget.style.color = 'var(--accent-dark)'} onMouseLeave={(e) => e.currentTarget.style.color = '#555'}>
-                        <span style={{ color: '#B69359', fontSize: '1.2rem', marginTop: '-4px' }}>•</span> {item}
-                      </Link>
-                    </li>
-                  );
-                })}
-              </ul>
+            {/* Card 2 */}
+            <div style={{ background: '#FCFAF5', borderRadius: '32px', display: 'flex', flexDirection: 'column', overflow: 'hidden', height: '600px', boxShadow: '0 4px 20px rgba(0,0,0,0.02)' }}>
+              <div style={{ padding: '3rem 2.5rem', flex: 1 }}>
+                <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: '2rem', color: '#B69359', marginBottom: '1.5rem', fontWeight: '400' }}>
+                  Non Surgical Lifting
+                </h3>
+                <p style={{ color: 'var(--text-primary)', fontSize: '1.05rem', lineHeight: '1.6', fontWeight: '400' }}>
+                  Non-surgical lifting gently tightens and lifts the skin, enhancing facial contours for a firmer, youthful appearance.
+                </p>
+              </div>
+              <div style={{ position: 'relative', height: '250px', width: '100%' }}>
+                <Image
+                  src="https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?auto=format&fit=crop&q=80&w=800"
+                  alt="Non Surgical Lifting"
+                  fill
+                  style={{ objectFit: 'cover', borderTopLeftRadius: '24px', borderTopRightRadius: '24px' }}
+                />
+              </div>
             </div>
 
-            {/* LASER */}
-            <div>
-              <h4 style={{ fontSize: '1.2rem', fontWeight: '700', color: '#1a2942', marginBottom: '1.5rem', textTransform: 'uppercase' }}>LASER</h4>
-              <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '0.8rem' }}>
-                {["Laser Hair Reduction", "Fractional Laser Treatment", "Scar Removal Treatment", "Tattoo Removal", "Hollywood Facial"].map((item, i) => {
-                  const itemSlug = item.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
-                  return (
-                    <li key={i}>
-                      <Link href={`/treatments/${itemSlug}`} style={{ color: '#555', fontSize: '0.95rem', display: 'flex', alignItems: 'flex-start', gap: '0.75rem', textDecoration: 'none', transition: 'color 0.2s' }} onMouseEnter={(e) => e.currentTarget.style.color = 'var(--accent-dark)'} onMouseLeave={(e) => e.currentTarget.style.color = '#555'}>
-                        <span style={{ color: '#B69359', fontSize: '1.2rem', marginTop: '-4px' }}>•</span> {item}
-                      </Link>
-                    </li>
-                  );
-                })}
-              </ul>
+            {/* Card 3 */}
+            <div style={{ background: '#FCFAF5', borderRadius: '32px', display: 'flex', flexDirection: 'column', overflow: 'hidden', height: '600px', boxShadow: '0 4px 20px rgba(0,0,0,0.02)' }}>
+              <div style={{ padding: '3rem 2.5rem', flex: 1 }}>
+                <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: '2rem', color: '#B69359', marginBottom: '1.5rem', fontWeight: '400' }}>
+                  Korean Cell therapy
+                </h3>
+                <p style={{ color: 'var(--text-primary)', fontSize: '1.05rem', lineHeight: '1.6', fontWeight: '400' }}>
+                  Korean Cell Therapy helps rejuvenate the skin, promoting a smoother, firmer, and more youthful-looking appearance.
+                </p>
+              </div>
+              <div style={{ position: 'relative', height: '250px', width: '100%' }}>
+                <Image
+                  src="https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?auto=format&fit=crop&q=80&w=800"
+                  alt="Korean Cell therapy"
+                  fill
+                  style={{ objectFit: 'cover', borderTopLeftRadius: '24px', borderTopRightRadius: '24px' }}
+                />
+              </div>
             </div>
 
-            {/* SEMI-PERMANENT MAKEUP */}
-            <div>
-              <h4 style={{ fontSize: '1.2rem', fontWeight: '700', color: '#1a2942', marginBottom: '1.5rem', textTransform: 'uppercase' }}>SEMI-PERMANENT MAKEUP</h4>
-              <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '0.8rem' }}>
-                {["Microblading", "Lip Tint", "BB Glow"].map((item, i) => {
-                  const itemSlug = item.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
-                  return (
-                    <li key={i}>
-                      <Link href={`/treatments/${itemSlug}`} style={{ color: '#555', fontSize: '0.95rem', display: 'flex', alignItems: 'flex-start', gap: '0.75rem', textDecoration: 'none', transition: 'color 0.2s' }} onMouseEnter={(e) => e.currentTarget.style.color = 'var(--accent-dark)'} onMouseLeave={(e) => e.currentTarget.style.color = '#555'}>
-                        <span style={{ color: '#B69359', fontSize: '1.2rem', marginTop: '-4px' }}>•</span> {item}
-                      </Link>
-                    </li>
-                  );
-                })}
-              </ul>
+            {/* Card 4 */}
+            <div style={{ background: '#FCFAF5', borderRadius: '32px', display: 'flex', flexDirection: 'column', overflow: 'hidden', height: '600px', boxShadow: '0 4px 20px rgba(0,0,0,0.02)' }}>
+              <div style={{ padding: '3rem 2.5rem', flex: 1 }}>
+                <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: '2rem', color: '#B69359', marginBottom: '1.5rem', fontWeight: '400' }}>
+                  Korean Glow Facial
+                </h3>
+                <p style={{ color: 'var(--text-primary)', fontSize: '1.05rem', lineHeight: '1.6', fontWeight: '400' }}>
+                  It helps improve skin texture, reduce dullness, and gives your face a fresh, smooth, and naturally radiant Korean glass-skin glow.
+                </p>
+              </div>
+              <div style={{ position: 'relative', height: '250px', width: '100%' }}>
+                <Image
+                  src="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?auto=format&fit=crop&q=80&w=800"
+                  alt="Korean Glow Facial"
+                  fill
+                  style={{ objectFit: 'cover', borderTopLeftRadius: '24px', borderTopRightRadius: '24px' }}
+                />
+              </div>
+            </div>
+
+            {/* Card 5 */}
+            <div style={{ background: '#FCFAF5', borderRadius: '32px', display: 'flex', flexDirection: 'column', overflow: 'hidden', height: '600px', boxShadow: '0 4px 20px rgba(0,0,0,0.02)' }}>
+              <div style={{ padding: '3rem 2.5rem', flex: 1 }}>
+                <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: '2rem', color: '#B69359', marginBottom: '1.5rem', fontWeight: '400' }}>
+                  Anti-Aging Treatments
+                </h3>
+                <p style={{ color: 'var(--text-primary)', fontSize: '1.05rem', lineHeight: '1.6', fontWeight: '400' }}>
+                  Support healthier, smoother, and more youthful-looking skin with personalized anti-aging treatments at Shrina  Skin Clinic.
+                </p>
+              </div>
+              <div style={{ position: 'relative', height: '250px', width: '100%' }}>
+                <Image
+                  src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&q=80&w=800"
+                  alt="Anti-Aging Treatments"
+                  fill
+                  style={{ objectFit: 'cover', borderTopLeftRadius: '24px', borderTopRightRadius: '24px' }}
+                />
+              </div>
+            </div>
+
+            {/* Card 6 (No Image, Just Text and Button) */}
+            <div style={{ background: '#FCFAF5', borderRadius: '32px', display: 'flex', flexDirection: 'column', overflow: 'hidden', height: '600px', boxShadow: '0 4px 20px rgba(0,0,0,0.02)', justifyContent: 'center', alignItems: 'center', textAlign: 'center', padding: '3rem' }}>
+              <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: '3rem', color: 'var(--primary)', marginBottom: '1.5rem', fontWeight: '400', lineHeight: '1.1' }}>
+                Other <span style={{ color: '#B69359' }}>Korean<br />Treatments</span>
+              </h3>
+              <p style={{ color: 'var(--text-secondary)', fontSize: '1.05rem', lineHeight: '1.6', fontWeight: '400', marginBottom: '3rem' }}>
+                Explore detailed information about this treatment, including how it works, who it's suitable for, its key benefits, recovery time, and the results you can expect from our expert care.
+              </p>
+              <Link href="/treatments" style={{
+                background: '#000',
+                color: '#fff',
+                padding: '1.2rem 2.5rem',
+                borderRadius: '999px',
+                textDecoration: 'none',
+                fontWeight: '500',
+                fontSize: '1rem',
+                display: 'flex',
+                alignItems: 'center',
+                gap: '0.8rem',
+                transition: 'background 0.3s'
+              }}
+                onMouseEnter={(e) => (e.currentTarget.style.background = '#333')}
+                onMouseLeave={(e) => (e.currentTarget.style.background = '#000')}
+              >
+                <span>&rarr;</span> More Treatments
+              </Link>
             </div>
 
           </div>

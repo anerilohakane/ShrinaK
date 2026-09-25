@@ -18,9 +18,9 @@ export default function Home() {
         <Hero />
         <About />
         <Treatments />
+        <WhyChooseUs />
         <Results />
         <Experience />
-        <WhyChooseUs />
         <Testimonials />
         <Contact />
       </main>
