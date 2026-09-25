@@ -139,12 +139,12 @@ export default function BlogPage() {
               <span style={{ color: 'var(--accent)' }}>Blog</span>
             </div>
           </div>
-          <style dangerouslySetInnerHTML={{__html: \`
+          <style dangerouslySetInnerHTML={{__html: `
             @keyframes subtleZoom {
               from { transform: scale(1); }
               to { transform: scale(1.05); }
             }
-          \`}} />
+          `}} />
         </div>
 
         {/* Blog Listing Section */}
