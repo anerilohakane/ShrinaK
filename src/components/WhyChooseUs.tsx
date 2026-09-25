@@ -93,11 +93,11 @@ export default function WhyChooseUs() {
             lineHeight: '1.1',
             marginBottom: '1.5rem'
           }}>
-            Why Choose <span style={{ color: '#B69359' }}>Shrina Asthetic Beauty Clinic?</span>
+            Why Choose <span style={{ color: '#B69359' }}>Shrina Korean Asthetic Clinic?</span>
           </h2>
 
           <p style={{ color: 'var(--text-secondary)', fontSize: '1.05rem', lineHeight: '1.6', maxWidth: '700px' }}>
-            Shrina Asthetic Beauty Clinic offers personalised treatment plans designed around your individual needs, goals, and desired results.
+            Shrina Korean Asthetic Clinic offers personalised treatment plans designed around your individual needs, goals, and desired results.
           </p>
         </div>
 

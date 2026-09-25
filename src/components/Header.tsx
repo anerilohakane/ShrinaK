@@ -45,8 +45,8 @@ export default function Header({ theme = 'light' }: { theme?: 'light' | 'dark' }
             <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z" fill="var(--accent)" />
             <path d="M12 6c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6-2.69-6-6-6zm0 10c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4z" fill="var(--accent)" />
           </svg>
-          <span style={{ fontSize: '1.2rem', fontWeight: '400', color: textColor, letterSpacing: '0.05em', fontFamily: 'var(--font-heading)' }}>SHRINA </span>
-          <span style={{ fontSize: '0.5rem', color: textColor, letterSpacing: '0.1em' }}>skin clinic</span>
+          <span style={{ fontSize: '1.2rem', fontWeight: '400', color: textColor, letterSpacing: '0.05em', fontFamily: 'var(--font-heading)' }}>SHRINA</span>
+          <span style={{ fontSize: '0.5rem', color: textColor, letterSpacing: '0.1em' }}>Korean Asthetic Clinic</span>
         </Link>
 
         {/* Main Nav */}
@@ -143,7 +143,7 @@ export default function Header({ theme = 'light' }: { theme?: 'light' | 'dark' }
               )}
             </li>
 
-            <li><Link href="/shop" style={{ color: textColor, fontSize: '0.95rem', fontWeight: '500', textDecoration: 'none' }}>Shop</Link></li>
+            <li><a href="/#about" style={{ color: textColor, fontSize: '0.95rem', fontWeight: '500', textDecoration: 'none' }}>About Us</a></li>
             <li><Link href="/blog" style={{ color: textColor, fontSize: '0.95rem', fontWeight: '500', textDecoration: 'none' }}>Blog</Link></li>
             <li><Link href="/book" style={{ color: textColor, fontSize: '0.95rem', fontWeight: '500', textDecoration: 'none' }}>Book Now</Link></li>
           </ul>
@@ -153,22 +153,22 @@ export default function Header({ theme = 'light' }: { theme?: 'light' | 'dark' }
         <div style={{ display: 'flex', gap: '1.5rem', alignItems: 'center' }}>
 
           {/* User Icon */}
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke={textColor} strokeWidth="1.5" style={{ cursor: 'pointer' }}>
+          {/* <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke={textColor} strokeWidth="1.5" style={{ cursor: 'pointer' }}>
             <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" /><circle cx="12" cy="7" r="4" />
-          </svg>
+          </svg> */}
 
           {/* Cart Icon */}
-          <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', cursor: 'pointer' }}>
+          {/* <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', cursor: 'pointer' }}>
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke={textColor} strokeWidth="1.5">
               <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z" /><line x1="3" y1="6" x2="21" y2="6" /><path d="M16 10a4 4 0 0 1-8 0" />
             </svg>
             <span style={{ background: 'var(--accent-dark)', color: '#fff', fontSize: '0.75rem', fontWeight: '600', padding: '0.1rem 0.4rem', borderRadius: '50%' }}>0</span>
-          </div>
+          </div> */}
 
           {/* Search Icon */}
-          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke={textColor} strokeWidth="1.5" style={{ cursor: 'pointer' }}>
+          {/* <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke={textColor} strokeWidth="1.5" style={{ cursor: 'pointer' }}>
             <circle cx="11" cy="11" r="8" /><line x1="21" y1="21" x2="16.65" y2="16.65" />
-          </svg>
+          </svg> */}
 
           {/* WhatsApp Button */}
           <a href="https://wa.me/918979797220" target="_blank" rel="noopener noreferrer" style={{

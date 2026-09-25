@@ -31,16 +31,16 @@ export default function Footer() {
             </div>
 
             <p style={{ color: 'rgba(255,255,255,0.9)', fontSize: '0.95rem', lineHeight: '1.7', marginBottom: '2rem' }}>
-              Shrina  Skin Clinic is located in Jumeirah, which stands as Dubai's premier destination for top-tier clinics, renowned for its luxury, excellence, and trusted medical expertise.
+              Shrina Korean Aesthetic Clinic is Pune's premier destination for advanced Korean-inspired skin, hair, and aesthetic treatments, renowned for luxury, precision, and trusted medical expertise.
             </p>
 
             <div style={{ display: 'flex', gap: '0.8rem' }}>
               {/* Instagram */}
-              <a href="https://www.instagram.com/shrina_aesthetic_clinic/" target="_blank" rel="noopener noreferrer" style={{ width: '40px', height: '40px', borderRadius: '50%', background: 'var(--secondary)', display: 'flex', alignItems: 'center', justifyContent: 'center', textDecoration: 'none', border: '1px solid transparent', transition: 'border-color 0.3s' }} onMouseOver={e => e.currentTarget.style.borderColor='var(--accent)'} onMouseOut={e => e.currentTarget.style.borderColor='transparent'}>
+              <a href="https://www.instagram.com/shrina_aesthetic_clinic/" target="_blank" rel="noopener noreferrer" style={{ width: '40px', height: '40px', borderRadius: '50%', background: 'var(--secondary)', display: 'flex', alignItems: 'center', justifyContent: 'center', textDecoration: 'none', border: '1px solid transparent', transition: 'border-color 0.3s' }} onMouseOver={e => e.currentTarget.style.borderColor = 'var(--accent)'} onMouseOut={e => e.currentTarget.style.borderColor = 'transparent'}>
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
               </a>
               {/* WhatsApp */}
-              <a href="https://wa.me/918979797220" target="_blank" rel="noopener noreferrer" style={{ width: '40px', height: '40px', borderRadius: '50%', background: 'var(--secondary)', display: 'flex', alignItems: 'center', justifyContent: 'center', textDecoration: 'none', border: '1px solid transparent', transition: 'border-color 0.3s' }} onMouseOver={e => e.currentTarget.style.borderColor='var(--accent)'} onMouseOut={e => e.currentTarget.style.borderColor='transparent'}>
+              <a href="https://wa.me/918979797220" target="_blank" rel="noopener noreferrer" style={{ width: '40px', height: '40px', borderRadius: '50%', background: 'var(--secondary)', display: 'flex', alignItems: 'center', justifyContent: 'center', textDecoration: 'none', border: '1px solid transparent', transition: 'border-color 0.3s' }} onMouseOver={e => e.currentTarget.style.borderColor = 'var(--accent)'} onMouseOut={e => e.currentTarget.style.borderColor = 'transparent'}>
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" /></svg>
               </a>
             </div>
@@ -51,11 +51,11 @@ export default function Footer() {
             <h4 style={{ color: '#fff', fontSize: '1rem', fontWeight: '600', marginBottom: '1.8rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>USEFUL LINKS</h4>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '1.2rem' }}>
               <Link href="/" style={{ color: 'rgba(255,255,255,0.9)', fontSize: '0.95rem', textDecoration: 'none' }}>Home</Link>
-              <Link href="/about" style={{ color: 'rgba(255,255,255,0.9)', fontSize: '0.95rem', textDecoration: 'none' }}>About Us</Link>
+              <a href="/#about" style={{ color: 'rgba(255,255,255,0.9)', fontSize: '0.95rem', textDecoration: 'none' }}>About Us</a>
               <Link href="/treatments" style={{ color: 'rgba(255,255,255,0.9)', fontSize: '0.95rem', textDecoration: 'none' }}>Treatments</Link>
-              <Link href="/shop" style={{ color: 'rgba(255,255,255,0.9)', fontSize: '0.95rem', textDecoration: 'none' }}>Shop</Link>
+              {/* <Link href="/shop" style={{ color: 'rgba(255,255,255,0.9)', fontSize: '0.95rem', textDecoration: 'none' }}>Shop</Link> */}
               <Link href="/blog" style={{ color: 'rgba(255,255,255,0.9)', fontSize: '0.95rem', textDecoration: 'none' }}>Blog</Link>
-              <Link href="/wishlist" style={{ color: 'rgba(255,255,255,0.9)', fontSize: '0.95rem', textDecoration: 'none' }}>Wishlist</Link>
+              {/* <Link href="/wishlist" style={{ color: 'rgba(255,255,255,0.9)', fontSize: '0.95rem', textDecoration: 'none' }}>Wishlist</Link> */}
               <Link href="/book" style={{ color: 'rgba(255,255,255,0.9)', fontSize: '0.95rem', textDecoration: 'none' }}>Book Now</Link>
             </div>
           </div>
@@ -64,14 +64,35 @@ export default function Footer() {
           <div style={{ display: 'flex', flexDirection: 'column' }}>
             <h4 style={{ color: '#fff', fontSize: '1rem', fontWeight: '600', marginBottom: '1.8rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>CONTACT</h4>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
+              {/* Location 1 */}
               <div style={{ display: 'flex', gap: '1rem', alignItems: 'flex-start' }}>
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0, marginTop: '2px' }}><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-                <span style={{ color: 'rgba(255,255,255,0.9)', fontSize: '0.95rem', lineHeight: '1.5' }}>Villa No. 124, Jumeirah 2, Dubai, United Arab Emirates</span>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0, marginTop: '4px' }}><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '0.2rem' }}>
+                  <strong style={{ color: '#fff', fontSize: '0.85rem', letterSpacing: '0.05em' }}>LOCATION 1</strong>
+                  <span style={{ color: 'rgba(255,255,255,0.9)', fontSize: '0.95rem', lineHeight: '1.6' }}>
+                    Motiram Complex, First Floor, Paud Rd,<br />
+                    Next to City Hospital, Guruganesh Nagar,<br />
+                    Kothrud, Pune, Maharashtra 411038
+                  </span>
+                </div>
+              </div>
+
+              {/* Location 2 */}
+              <div style={{ display: 'flex', gap: '1rem', alignItems: 'flex-start' }}>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0, marginTop: '4px' }}><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '0.2rem' }}>
+                  <strong style={{ color: '#fff', fontSize: '0.85rem', letterSpacing: '0.05em' }}>LOCATION 2</strong>
+                  <span style={{ color: 'rgba(255,255,255,0.9)', fontSize: '0.95rem', lineHeight: '1.6' }}>
+                    Shop No. UG-11, Beside Richfeel, Gate D,<br />
+                    East Court Phoenix, Beside Phoenix Marketcity,<br />
+                    Viman Nagar, Pune, Maharashtra 411014
+                  </span>
+                </div>
               </div>
 
               <div style={{ display: 'flex', gap: '1rem', alignItems: 'center' }}>
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0 }}><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
-                <span style={{ color: 'rgba(255,255,255,0.9)', fontSize: '0.95rem' }}>+971 54 305 0521</span>
+                <span style={{ color: 'rgba(255,255,255,0.9)', fontSize: '0.95rem' }}>8979797220</span>
               </div>
 
               <div style={{ display: 'flex', gap: '1rem', alignItems: 'center' }}>
@@ -81,19 +102,9 @@ export default function Footer() {
 
               <div style={{ display: 'flex', gap: '1rem', alignItems: 'flex-start' }}>
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ flexShrink: 0, marginTop: '2px' }}><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
-                <ul style={{
-                  listStyle: 'none', padding: 0, margin: 0,
-                  color: 'rgba(255,255,255,0.9)', fontSize: '0.95rem',
-                  display: 'flex', flexDirection: 'column', gap: '0.4rem'
-                }}>
-                  <li>Monday: 10:00 AM - 7:00 PM</li>
-                  <li>Tuesday: 10:00 AM - 7:00 PM</li>
-                  <li>Wednesday: 10:00 AM - 7:00 PM</li>
-                  <li>Thursday: 10:00 AM - 7:00 PM</li>
-                  <li>Friday: 10:00 AM - 7:00 PM</li>
-                  <li>Saturday: 10:00 AM - 7:00 PM</li>
-                  <li>Sunday: 10:00 AM - 7:00 PM</li>
-                </ul>
+                <span style={{ color: 'rgba(255,255,255,0.9)', fontSize: '0.95rem', marginTop: '2px' }}>
+                  Open: 10:00 AM - 7:00 PM
+                </span>
               </div>
             </div>
           </div>
