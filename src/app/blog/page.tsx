@@ -156,7 +156,7 @@ export default function BlogPage() {
               gap: '3rem 2rem' 
             }}>
               {blogPosts.map((post) => (
-                <article key={post.id} style={{ display: 'flex', flexDirection: 'column', cursor: 'pointer', group: 'true' }}>
+                <article key={post.id} style={{ display: 'flex', flexDirection: 'column', cursor: 'pointer' }}>
                   {/* Image Container */}
                   <div style={{ position: 'relative', width: '100%', height: '260px', borderRadius: '16px', overflow: 'hidden', marginBottom: '1.5rem', boxShadow: '0 4px 20px rgba(0,0,0,0.03)' }}>
                     <Image 
