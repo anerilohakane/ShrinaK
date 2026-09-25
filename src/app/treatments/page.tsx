@@ -67,43 +67,101 @@ export default function TreatmentsPage() {
       <Header theme="dark" />
       <main style={{ minHeight: '100vh', background: '#FFFDF9' }}>
 
-        {/* Treatments Hero Banner */}
-        <div className="container" style={{ paddingTop: '8rem', paddingBottom: '4rem' }}>
-          <div style={{
-            position: 'relative',
-            width: '100%',
-            height: '400px',
-            borderRadius: '0 0 40px 40px',
-            overflow: 'hidden',
-            display: 'flex',
-            flexDirection: 'column',
-            justifyContent: 'center',
-            alignItems: 'center',
-            textAlign: 'center',
-            color: '#fff'
-          }}>
-            {/* Background Image */}
-            <div style={{ position: 'absolute', inset: 0, zIndex: 0 }}>
-              <img
-                src="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?auto=format&fit=crop&q=80&w=1600"
-                alt="Treatments"
-                style={{ width: '100%', height: '100%', objectFit: 'cover' }}
-              />
-              <div style={{ position: 'absolute', inset: 0, background: 'rgba(0,0,0,0.3)' }}></div>
-            </div>
+        {/* Ultra-Premium Treatments Hero Banner */}
+        <div style={{ 
+          position: 'relative', 
+          width: '100%', 
+          height: '55vh',
+          minHeight: '500px',
+          display: 'flex',
+          flexDirection: 'column',
+          justifyContent: 'center',
+          alignItems: 'center',
+          textAlign: 'center',
+          paddingTop: '6rem',
+          overflow: 'hidden'
+        }}>
+          {/* Background Image with slight zoom effect */}
+          <div style={{ position: 'absolute', inset: 0, zIndex: 0, animation: 'subtleZoom 20s infinite alternate' }}>
+            <img
+              src="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?auto=format&fit=crop&q=80&w=2500"
+              alt="Luxury Skin Treatments"
+              style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 30%' }}
+            />
+            {/* Multi-layered gradient for depth */}
+            <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to bottom, rgba(28, 46, 37, 0.4) 0%, rgba(28, 46, 37, 0.8) 100%)' }}></div>
+            <div style={{ position: 'absolute', inset: 0, background: 'radial-gradient(circle at center, transparent 0%, rgba(28, 46, 37, 0.6) 100%)' }}></div>
+          </div>
 
-            {/* Content */}
-            <div style={{ position: 'relative', zIndex: 1 }}>
-              <h1 style={{ fontFamily: 'var(--font-heading)', fontSize: '4rem', fontWeight: '400', marginBottom: '1rem' }}>
-                Treatments
-              </h1>
-              <div style={{ fontSize: '0.9rem', fontWeight: '500', letterSpacing: '0.05em' }}>
-                <Link href="/" style={{ color: '#fff', textDecoration: 'none' }}>Home</Link>
-                <span style={{ margin: '0 0.8rem' }}>&gt;</span>
-                <span>Treatments</span>
-              </div>
+          {/* Content */}
+          <div className="container" style={{ position: 'relative', zIndex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+            
+            {/* Decorative Top Element */}
+            <div style={{ 
+              width: '1px', 
+              height: '40px', 
+              background: 'var(--accent)', 
+              marginBottom: '1.5rem',
+              animation: 'slideUp 1s ease-out'
+            }}></div>
+            
+            <span style={{ 
+              color: 'var(--accent)', 
+              fontSize: '0.85rem', 
+              fontWeight: '600', 
+              letterSpacing: '0.3em', 
+              textTransform: 'uppercase', 
+              marginBottom: '1rem',
+              animation: 'fadeIn 1s ease-out 0.2s both'
+            }}>
+              Our Expertise
+            </span>
+
+            <h1 style={{ 
+              fontFamily: 'var(--font-heading)', 
+              fontSize: 'clamp(3.5rem, 6vw, 5.5rem)', 
+              fontWeight: '400', 
+              marginBottom: '1.5rem',
+              color: '#FFFFFF',
+              lineHeight: 1.1,
+              animation: 'slideUp 1s ease-out 0.4s both'
+            }}>
+              Curated <span style={{ fontStyle: 'italic', color: 'var(--accent)' }}>Treatments</span>
+            </h1>
+
+            <p style={{
+              color: 'rgba(255,255,255,0.8)',
+              maxWidth: '600px',
+              fontSize: '1.1rem',
+              lineHeight: 1.6,
+              marginBottom: '2.5rem',
+              animation: 'fadeIn 1s ease-out 0.6s both'
+            }}>
+              Discover our comprehensive range of advanced aesthetic procedures tailored to reveal your skin's true potential.
+            </p>
+
+            <div style={{ 
+              fontSize: '0.85rem', 
+              fontWeight: '500', 
+              letterSpacing: '0.15em', 
+              textTransform: 'uppercase',
+              display: 'flex',
+              alignItems: 'center',
+              gap: '1rem',
+              animation: 'fadeIn 1s ease-out 0.8s both'
+            }}>
+              <Link href="/" style={{ color: '#fff', textDecoration: 'none' }}>Home</Link>
+              <span style={{ width: '30px', height: '1px', background: 'rgba(255,255,255,0.3)' }}></span>
+              <span style={{ color: 'var(--accent)' }}>Treatments</span>
             </div>
           </div>
+          
+          <style dangerouslySetInnerHTML={{__html: `
+            @keyframes subtleZoom {
+              from { transform: scale(1); }
+              to { transform: scale(1.05); }
+            }
+          `}} />
         </div>
 
         {/* Our Best Treatments Grid */}
