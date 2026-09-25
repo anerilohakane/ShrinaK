@@ -1,158 +1,98 @@
 "use client";
 
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 export default function About() {
-  const teamMembers = [
-    { name: "Dr. Arti Agao", role: "Aesthetic Doctor" },
-    { name: "Dr. Vaibhavi Manjare", role: "Cosmetologist" },
-    { name: "Miss. Tejal Yadav", role: "Aesthetician" },
-    { name: "Miss. Sakshi Mengde", role: "Aesthetician" },
-    { name: "Dr. Vaijyanti Nandgaonkar", role: "Visiting Skin Specialist", isVisiting: true },
-    { name: "Dr. Shweta Padole", role: "Visiting Hair Specialist", isVisiting: true }
-  ];
-
   return (
-    <section id="about" style={{ padding: '8rem 0', background: 'var(--surface-alt)' }}>
+    <section id="specialist" style={{ padding: '8rem 0', background: '#FCFAF5', overflow: 'hidden' }}>
       <div className="container">
-        
-        {/* Quote Section */}
-        <div style={{ textAlign: 'center', maxWidth: '800px', margin: '0 auto 8rem auto', position: 'relative' }}>
+
+        {/* Header Section */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          style={{ marginBottom: '4rem' }}
+        >
           <span style={{
-            position: 'absolute',
-            top: '-3rem',
-            left: '50%',
-            transform: 'translateX(-50%)',
-            fontSize: '12rem',
-            color: 'rgba(28, 46, 37, 0.04)',
-            fontFamily: 'var(--font-heading)',
-            zIndex: 0,
-            lineHeight: 1
-          }}>“</span>
+            display: 'inline-block',
+            border: '1px solid #B69359',
+            color: '#B69359',
+            padding: '0.5rem 1.5rem',
+            borderRadius: '9999px',
+            fontSize: '0.8rem',
+            fontWeight: '600',
+            letterSpacing: '0.15em',
+            textTransform: 'uppercase',
+            marginBottom: '2rem'
+          }}>
+            SPECIALIST
+          </span>
           <h2 style={{
             fontFamily: 'var(--font-heading)',
-            fontSize: 'clamp(2rem, 4vw, 3.5rem)',
-            lineHeight: '1.3',
+            fontSize: 'clamp(3rem, 5vw, 4.5rem)',
             color: 'var(--primary)',
-            fontStyle: 'italic',
             fontWeight: '400',
-            position: 'relative',
-            zIndex: 1
+            lineHeight: '1.1'
           }}>
-            "Beauty isn't about changing you—it's about bringing out the best version of you."
+            Meet Our <span style={{ color: '#B69359' }}>Specialist</span>
           </h2>
-        </div>
+        </motion.div>
 
-        {/* Section Header */}
-        <div style={{ textAlign: 'center', marginBottom: '5rem' }}>
-          <span style={{ 
-            display: 'block',
-            fontSize: '0.7rem', 
-            fontWeight: '600', 
-            color: 'var(--accent-dark)', 
-            letterSpacing: '0.25em',
-            textTransform: 'uppercase',
-            marginBottom: '1rem'
-          }}>The Visionaries</span>
-          
-          <h2 style={{ 
-            fontFamily: 'var(--font-heading)',
-            fontSize: 'clamp(2.5rem, 4vw, 3.5rem)', 
-            color: 'var(--primary)', 
-            fontWeight: '400',
-            lineHeight: '1.1'
-          }}>Meet Our Founders</h2>
-        </div>
+        {/* Content Section (50/50 Split) */}
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(400px, 1fr))', gap: '5rem', alignItems: 'flex-start' }}>
 
-        {/* Founders Section (2 Columns) */}
-        <div className="grid-responsive-2" style={{ marginBottom: '8rem' }}>
-          
-          {/* Founder 1 */}
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
-            <div style={{ position: 'relative', height: '550px', borderRadius: '16px', overflow: 'hidden', boxShadow: '0 20px 40px rgba(28,46,37,0.1)' }}>
-              <Image src="/doctor_shrina.jpg" alt="Dr. Sneha Wanve" fill style={{ objectFit: 'cover' }} />
+          {/* Left: Image */}
+          <motion.div
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
+            style={{ position: 'relative', height: '650px', borderRadius: '24px', overflow: 'hidden', boxShadow: '0 20px 40px rgba(0,0,0,0.08)' }}
+          >
+            <Image
+              src="/doctor_shrina.jpg"
+              alt="Dr. Sneha Wanve - Aesthetic Physician"
+              fill
+              style={{ objectFit: 'cover' }}
+            />
+          </motion.div>
+
+          {/* Right: Text */}
+          <motion.div
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.8, ease: "easeOut", delay: 0.4 }}
+            style={{ display: 'flex', flexDirection: 'column', gap: '2rem', paddingTop: '2rem' }}
+          >
+            {/* Dr. Sneha Wanve Heading with vertical line */}
+            <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
+              <div style={{ width: '4px', height: '40px', background: '#B69359', borderRadius: '2px' }}></div>
+              <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: '2.8rem', color: '#B69359', margin: 0 }}>
+                Dr. Sneha Wanve
+              </h3>
             </div>
-            <div style={{ padding: '0 1rem' }}>
-              <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: '2.2rem', color: 'var(--primary)', marginBottom: '0.5rem' }}>Dr. Sneha Wanve</h3>
-              <p style={{ color: 'var(--accent-dark)', fontSize: '0.85rem', fontWeight: '600', textTransform: 'uppercase', letterSpacing: '0.15em', marginBottom: '0.5rem' }}>Founder</p>
-              <p style={{ color: 'var(--text-primary)', fontSize: '0.95rem', marginBottom: '1.5rem', fontWeight: '500' }}>Aesthetic Physician, Shrina Aesthetic Clinic</p>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '1rem', lineHeight: '1.8' }}>
-                With a passion for aesthetic medicine and a commitment to natural, beautiful results, Dr. Sneha Wanve combines medical expertise with an artistic eye to deliver personalized care.
+
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem', color: 'var(--text-primary)', fontSize: '1.05rem', lineHeight: '1.8' }}>
+              <p>
+                Dr. Sneha Wanve is an aesthetic physician with a distinctive multidisciplinary foundation in both Medicine (MD) and Korean Medicine (KMD). She earned her Doctor of Medicine from the Graduate School of Medicine at Kyung Hee University in Seoul, South Korea, and holds a Bachelor of Korean Medicine from the same institution.
+              </p>
+
+              <p>
+                Bringing extensive clinical experience from Seoul's leading aesthetic medical centres, Dr. Sneha Wanve takes an anatomy-driven, highly individualised approach to facial rejuvenation. Her philosophy centres on achieving harmonious, natural-looking outcomes through meticulous assessment and personalised treatment planning.
+              </p>
+
+              <p>
+                Her areas of expertise encompass advanced injectables, including dermal fillers and botulinum toxin for facial contouring, collagen biostimulators, and skin boosters as well as regenerative therapies. She also specializes in non-surgical lifting and skin rejuvenation techniques tailored to enhance your innate beauty.
               </p>
             </div>
-          </div>
 
-          {/* Founder 2 */}
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '2rem' }}>
-            <div style={{ position: 'relative', height: '550px', borderRadius: '16px', overflow: 'hidden', boxShadow: '0 20px 40px rgba(28,46,37,0.1)' }}>
-              <Image src="/doctor_shrina.jpg" alt="Dr. Pooja Nagargoje" fill style={{ objectFit: 'cover' }} />
-            </div>
-            <div style={{ padding: '0 1rem' }}>
-              <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: '2.2rem', color: 'var(--primary)', marginBottom: '0.5rem' }}>Dr. Pooja Nagargoje</h3>
-              <p style={{ color: 'var(--accent-dark)', fontSize: '0.85rem', fontWeight: '600', textTransform: 'uppercase', letterSpacing: '0.15em', marginBottom: '0.5rem' }}>Co-Founder</p>
-              <p style={{ color: 'var(--text-primary)', fontSize: '0.95rem', marginBottom: '1.5rem', fontWeight: '500' }}>Cosmetologist, Second Branch</p>
-              <p style={{ color: 'var(--text-secondary)', fontSize: '1rem', lineHeight: '1.8' }}>
-                Dedicated to advanced cosmetological procedures, Dr. Pooja brings a wealth of experience and precision to ensure every patient receives world-class treatment and care.
-              </p>
-            </div>
-          </div>
+          </motion.div>
 
         </div>
-
-        {/* Team Section Header */}
-        <div style={{ textAlign: 'center', marginBottom: '4rem' }}>
-          <span style={{ 
-            display: 'block',
-            fontSize: '0.7rem', 
-            fontWeight: '600', 
-            color: 'var(--accent-dark)', 
-            letterSpacing: '0.25em',
-            textTransform: 'uppercase',
-            marginBottom: '1rem'
-          }}>The Experts</span>
-          
-          <h2 style={{ 
-            fontFamily: 'var(--font-heading)',
-            fontSize: 'clamp(2.5rem, 4vw, 3.5rem)', 
-            color: 'var(--primary)', 
-            fontWeight: '400',
-            lineHeight: '1.1'
-          }}>Our Aesthetic Team</h2>
-        </div>
-
-        {/* Team Grid (3 Columns) */}
-        <div className="grid-responsive-3">
-          {teamMembers.map((member, index) => (
-            <div key={index} style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem', textAlign: 'center' }}>
-              <div style={{ position: 'relative', height: '400px', borderRadius: '12px', overflow: 'hidden', boxShadow: '0 10px 20px rgba(0,0,0,0.05)' }}>
-                <Image src="/doctor_shrina.jpg" alt={member.name} fill style={{ objectFit: 'cover' }} />
-                {member.isVisiting && (
-                  <div style={{ 
-                    position: 'absolute', 
-                    top: '1rem', 
-                    right: '1rem', 
-                    background: 'var(--accent-dark)', 
-                    color: '#fff', 
-                    padding: '0.4rem 1rem', 
-                    borderRadius: '999px',
-                    fontSize: '0.65rem',
-                    fontWeight: '600',
-                    textTransform: 'uppercase',
-                    letterSpacing: '0.1em',
-                    boxShadow: '0 4px 10px rgba(0,0,0,0.1)'
-                  }}>
-                    Visiting Specialist
-                  </div>
-                )}
-              </div>
-              <div>
-                <h4 style={{ fontFamily: 'var(--font-heading)', fontSize: '1.4rem', color: 'var(--primary)', marginBottom: '0.4rem' }}>{member.name}</h4>
-                <p style={{ color: 'var(--text-secondary)', fontSize: '0.85rem', textTransform: 'uppercase', letterSpacing: '0.1em', fontWeight: '600' }}>{member.role}</p>
-              </div>
-            </div>
-          ))}
-        </div>
-
       </div>
     </section>
   );
