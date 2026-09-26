@@ -12,7 +12,7 @@ export default function WhyChooseUs() {
           <circle cx="20" cy="10" r="2" />
         </svg>
       ),
-      title: "Korean Expertise, Dubai Standards",
+      title: "Korean Expertise, Pune Standards",
       desc: "Our dermatologists and skin specialists are trained in Korea's world-renowned aesthetic techniques, the same standards that made K-beauty a global benchmark."
     },
     {

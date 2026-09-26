@@ -8,7 +8,7 @@ export default function BlogPage() {
     {
       id: 1,
       title: "The Secrets to Achieving Authentic Glass Skin",
-      excerpt: "Discover the multi-step Korean skincare routine that is taking Dubai by storm. Learn which treatments are essential for that flawless, translucent glow.",
+      excerpt: "Discover the multi-step Korean skincare routine that is taking Pune by storm. Learn which treatments are essential for that flawless, translucent glow.",
       date: "September 15, 2026",
       category: "Skincare",
       image: "https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?auto=format&fit=crop&q=80&w=800",
@@ -65,11 +65,11 @@ export default function BlogPage() {
     <>
       <Header theme="dark" />
       <main style={{ minHeight: '100vh', background: '#FFFDF9' }}>
-        
+
         {/* Ultra-Premium Blog Hero Banner */}
-        <div style={{ 
-          position: 'relative', 
-          width: '100%', 
+        <div style={{
+          position: 'relative',
+          width: '100%',
           height: '50vh',
           minHeight: '450px',
           display: 'flex',
@@ -92,30 +92,30 @@ export default function BlogPage() {
 
           {/* Content */}
           <div className="container" style={{ position: 'relative', zIndex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-            <div style={{ 
-              width: '1px', 
-              height: '40px', 
-              background: 'var(--accent)', 
+            <div style={{
+              width: '1px',
+              height: '40px',
+              background: 'var(--accent)',
               marginBottom: '1.5rem',
               animation: 'slideUp 1s ease-out'
             }}></div>
-            
-            <span style={{ 
-              color: 'var(--accent)', 
-              fontSize: '0.85rem', 
-              fontWeight: '600', 
-              letterSpacing: '0.3em', 
-              textTransform: 'uppercase', 
+
+            <span style={{
+              color: 'var(--accent)',
+              fontSize: '0.85rem',
+              fontWeight: '600',
+              letterSpacing: '0.3em',
+              textTransform: 'uppercase',
               marginBottom: '1rem',
               animation: 'fadeIn 1s ease-out 0.2s both'
             }}>
               Insights & News
             </span>
 
-            <h1 style={{ 
-              fontFamily: 'var(--font-heading)', 
-              fontSize: 'clamp(3.5rem, 6vw, 5.5rem)', 
-              fontWeight: '400', 
+            <h1 style={{
+              fontFamily: 'var(--font-heading)',
+              fontSize: 'clamp(3.5rem, 6vw, 5.5rem)',
+              fontWeight: '400',
               marginBottom: '1.5rem',
               color: '#FFFFFF',
               lineHeight: 1.1,
@@ -124,10 +124,10 @@ export default function BlogPage() {
               The Shrina <span style={{ fontStyle: 'italic', color: 'var(--accent)' }}>Journal</span>
             </h1>
 
-            <div style={{ 
-              fontSize: '0.85rem', 
-              fontWeight: '500', 
-              letterSpacing: '0.15em', 
+            <div style={{
+              fontSize: '0.85rem',
+              fontWeight: '500',
+              letterSpacing: '0.15em',
               textTransform: 'uppercase',
               display: 'flex',
               alignItems: 'center',
@@ -139,7 +139,8 @@ export default function BlogPage() {
               <span style={{ color: 'var(--accent)' }}>Blog</span>
             </div>
           </div>
-          <style dangerouslySetInnerHTML={{__html: `
+          <style dangerouslySetInnerHTML={{
+            __html: `
             @keyframes subtleZoom {
               from { transform: scale(1); }
               to { transform: scale(1.05); }
@@ -150,29 +151,29 @@ export default function BlogPage() {
         {/* Blog Listing Section */}
         <section style={{ padding: '6rem 0', background: '#FFFDF9' }}>
           <div className="container" style={{ maxWidth: '1200px' }}>
-            <div style={{ 
-              display: 'grid', 
-              gridTemplateColumns: 'repeat(auto-fill, minmax(320px, 1fr))', 
-              gap: '3rem 2rem' 
+            <div style={{
+              display: 'grid',
+              gridTemplateColumns: 'repeat(auto-fill, minmax(320px, 1fr))',
+              gap: '3rem 2rem'
             }}>
               {blogPosts.map((post) => (
                 <article key={post.id} style={{ display: 'flex', flexDirection: 'column', cursor: 'pointer' }}>
                   {/* Image Container */}
                   <div style={{ position: 'relative', width: '100%', height: '260px', borderRadius: '16px', overflow: 'hidden', marginBottom: '1.5rem', boxShadow: '0 4px 20px rgba(0,0,0,0.03)' }}>
-                    <Image 
-                      src={post.image} 
-                      alt={post.title} 
-                      fill 
+                    <Image
+                      src={post.image}
+                      alt={post.title}
+                      fill
                       style={{ objectFit: 'cover', transition: 'transform 0.5s ease' }}
                       className="blog-image"
                     />
-                    <div style={{ 
-                      position: 'absolute', 
-                      top: '1rem', 
-                      left: '1rem', 
-                      background: 'rgba(255,255,255,0.9)', 
+                    <div style={{
+                      position: 'absolute',
+                      top: '1rem',
+                      left: '1rem',
+                      background: 'rgba(255,255,255,0.9)',
                       backdropFilter: 'blur(4px)',
-                      padding: '0.3rem 0.8rem', 
+                      padding: '0.3rem 0.8rem',
                       borderRadius: '999px',
                       fontSize: '0.75rem',
                       fontWeight: '600',
@@ -183,17 +184,17 @@ export default function BlogPage() {
                       {post.category}
                     </div>
                   </div>
-                  
+
                   {/* Content */}
                   <div>
                     <div style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', marginBottom: '0.8rem', fontWeight: '500' }}>
                       {post.date}
                     </div>
-                    <h3 style={{ 
-                      fontFamily: 'var(--font-heading)', 
-                      fontSize: '1.5rem', 
-                      fontWeight: '500', 
-                      color: 'var(--primary)', 
+                    <h3 style={{
+                      fontFamily: 'var(--font-heading)',
+                      fontSize: '1.5rem',
+                      fontWeight: '500',
+                      color: 'var(--primary)',
                       marginBottom: '1rem',
                       lineHeight: 1.3
                     }}>
@@ -201,10 +202,10 @@ export default function BlogPage() {
                         {post.title}
                       </Link>
                     </h3>
-                    <p style={{ 
-                      fontSize: '0.95rem', 
-                      color: 'var(--text-secondary)', 
-                      lineHeight: 1.6, 
+                    <p style={{
+                      fontSize: '0.95rem',
+                      color: 'var(--text-secondary)',
+                      lineHeight: 1.6,
                       marginBottom: '1.5rem',
                       display: '-webkit-box',
                       WebkitLineClamp: 3,
@@ -213,7 +214,7 @@ export default function BlogPage() {
                     }}>
                       {post.excerpt}
                     </p>
-                    <Link href={`/blog/${post.slug}`} style={{ 
+                    <Link href={`/blog/${post.slug}`} style={{
                       display: 'inline-flex',
                       alignItems: 'center',
                       gap: '0.5rem',
@@ -224,14 +225,14 @@ export default function BlogPage() {
                       textTransform: 'uppercase',
                       letterSpacing: '0.05em'
                     }}>
-                      Read Article 
+                      Read Article
                       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14"></path><path d="M12 5l7 7-7 7"></path></svg>
                     </Link>
                   </div>
                 </article>
               ))}
             </div>
-            
+
             {/* Pagination Placeholder */}
             <div style={{ display: 'flex', justifyContent: 'center', marginTop: '5rem', gap: '0.5rem' }}>
               <button style={{ width: '40px', height: '40px', borderRadius: '50%', background: 'var(--primary)', color: '#fff', border: 'none', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: '600', cursor: 'pointer' }}>1</button>

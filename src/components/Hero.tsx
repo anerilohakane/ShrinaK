@@ -19,7 +19,7 @@ const slides = [
   {
     id: 3,
     image: "https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?auto=format&fit=crop&q=80&w=2000",
-    alt: "Dubai Skyline Luxury",
+    alt: "Pune Skyline Luxury",
   },
   {
     id: 4,
@@ -39,11 +39,11 @@ export default function Hero() {
   }, []);
 
   return (
-    <section id="home" className="hero" style={{ 
-      minHeight: '100vh', 
+    <section id="home" className="hero" style={{
+      minHeight: '100vh',
       position: 'relative',
-      display: 'flex', 
-      alignItems: 'center', 
+      display: 'flex',
+      alignItems: 'center',
       overflow: 'hidden',
       paddingTop: '10rem'
     }}>
@@ -72,7 +72,7 @@ export default function Hero() {
 
       {/* Foreground Content */}
       <div className="container flex-responsive-stack" style={{ position: 'relative', zIndex: 10, justifyContent: 'space-between', alignItems: 'center', width: '100%', gap: '4rem' }}>
-        
+
         {/* Left Content */}
         <motion.div
           initial={{ x: -30, opacity: 0 }}
@@ -80,11 +80,11 @@ export default function Hero() {
           transition={{ duration: 1, delay: 0.2, ease: "easeOut" }}
           style={{ maxWidth: '650px' }}
         >
-          <span style={{ 
-            display: 'inline-block', 
-            fontSize: '0.8rem', 
-            fontWeight: '600', 
-            color: 'var(--accent)', 
+          <span style={{
+            display: 'inline-block',
+            fontSize: '0.8rem',
+            fontWeight: '600',
+            color: 'var(--accent)',
             marginBottom: '1.5rem',
             letterSpacing: '0.25em',
             textTransform: 'uppercase',
@@ -92,24 +92,24 @@ export default function Hero() {
             padding: '0.4rem 1rem',
             borderRadius: '9999px'
           }}>EASY TO FIND, HARD TO LEAVE</span>
-          
-          <h1 style={{ 
-            fontSize: 'clamp(3.5rem, 6vw, 5.5rem)', 
-            lineHeight: '1.1', 
-            marginBottom: '1.5rem', 
+
+          <h1 style={{
+            fontSize: 'clamp(3.5rem, 6vw, 5.5rem)',
+            lineHeight: '1.1',
+            marginBottom: '1.5rem',
             color: '#FFFFFF',
             fontWeight: '400',
             fontFamily: 'var(--font-heading)'
           }}>
-            Find Your <br/>
+            Find Your <br />
             <span style={{ color: 'var(--accent)', fontStyle: 'italic' }}>Natural Beauty</span>
           </h1>
-          
-          <p style={{ 
-            fontSize: '1.1rem', 
-            color: 'rgba(255,255,255,0.9)', 
-            marginBottom: '2rem', 
-            maxWidth: '500px', 
+
+          <p style={{
+            fontSize: '1.1rem',
+            color: 'rgba(255,255,255,0.9)',
+            marginBottom: '2rem',
+            maxWidth: '500px',
             lineHeight: '1.6',
             fontWeight: '300'
           }}>
@@ -126,13 +126,13 @@ export default function Hero() {
               <span style={{ fontSize: '0.9rem' }}>Guaranteed Satisfaction</span>
             </div>
           </div>
-          
+
           <div style={{ display: 'flex', gap: '1.5rem', marginBottom: '3rem', flexWrap: 'wrap', alignItems: 'center' }}>
-            <a href="https://wa.me/918979797220" target="_blank" rel="noopener noreferrer" className="btn" style={{ 
-              background: 'transparent', 
-              color: 'var(--accent)', 
+            <a href="https://wa.me/918979797220" target="_blank" rel="noopener noreferrer" className="btn" style={{
+              background: 'transparent',
+              color: 'var(--accent)',
               border: '2px solid var(--accent)',
-              padding: '0.8rem 2rem', 
+              padding: '0.8rem 2rem',
               fontSize: '1rem',
               fontWeight: '500',
               borderRadius: '9999px',
@@ -143,9 +143,9 @@ export default function Hero() {
             }}>
               Contact Us <span>💬</span>
             </a>
-            <a href="#treatments" className="btn" style={{ 
-              background: 'var(--accent)', 
-              color: 'var(--primary)', 
+            <a href="#treatments" className="btn" style={{
+              background: 'var(--accent)',
+              color: 'var(--primary)',
               borderRadius: '9999px',
               padding: '0.8rem 2rem',
               display: 'flex',
@@ -197,7 +197,7 @@ export default function Hero() {
             />
           ))}
         </motion.div>
-        
+
       </div>
     </section>
   );

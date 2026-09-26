@@ -9,7 +9,7 @@ const blogPosts = [
   {
     id: 1,
     title: "The Secrets to Achieving Authentic Glass Skin",
-    excerpt: "Discover the multi-step Korean skincare routine that is taking Dubai by storm. Learn which treatments are essential for that flawless, translucent glow.",
+    excerpt: "Discover the multi-step Korean skincare routine that is taking Pune by storm. Learn which treatments are essential for that flawless, translucent glow.",
     date: "September 15, 2026",
     category: "Skincare",
     image: "https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?auto=format&fit=crop&q=80&w=800",
@@ -86,11 +86,11 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
     <>
       <Header theme="dark" />
       <main style={{ minHeight: '100vh', background: '#FFFDF9' }}>
-        
+
         {/* Article Hero Banner */}
-        <div style={{ 
-          position: 'relative', 
-          width: '100%', 
+        <div style={{
+          position: 'relative',
+          width: '100%',
           height: '60vh',
           minHeight: '500px',
           display: 'flex',
@@ -117,12 +117,12 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
 
           {/* Content */}
           <div className="container" style={{ position: 'relative', zIndex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center', maxWidth: '800px' }}>
-            <div style={{ 
-              color: 'var(--accent)', 
-              fontSize: '0.85rem', 
-              fontWeight: '600', 
-              letterSpacing: '0.15em', 
-              textTransform: 'uppercase', 
+            <div style={{
+              color: 'var(--accent)',
+              fontSize: '0.85rem',
+              fontWeight: '600',
+              letterSpacing: '0.15em',
+              textTransform: 'uppercase',
               marginBottom: '1.5rem',
               background: 'rgba(28, 46, 37, 0.5)',
               padding: '0.4rem 1.2rem',
@@ -132,10 +132,10 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
               {post.category}
             </div>
 
-            <h1 style={{ 
-              fontFamily: 'var(--font-heading)', 
-              fontSize: 'clamp(2.5rem, 5vw, 4rem)', 
-              fontWeight: '400', 
+            <h1 style={{
+              fontFamily: 'var(--font-heading)',
+              fontSize: 'clamp(2.5rem, 5vw, 4rem)',
+              fontWeight: '400',
               marginBottom: '1.5rem',
               color: '#FFFFFF',
               lineHeight: 1.2
@@ -143,10 +143,10 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
               {post.title}
             </h1>
 
-            <div style={{ 
-              fontSize: '0.9rem', 
+            <div style={{
+              fontSize: '0.9rem',
               color: 'rgba(255,255,255,0.7)',
-              fontWeight: '500', 
+              fontWeight: '500',
               letterSpacing: '0.05em',
               display: 'flex',
               alignItems: 'center',
@@ -161,11 +161,11 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
 
         {/* Article Body */}
         <article className="container" style={{ maxWidth: '800px', padding: '5rem 2rem' }}>
-          
-          <div style={{ 
-            fontSize: '1.25rem', 
-            lineHeight: 1.8, 
-            color: 'var(--text-primary)', 
+
+          <div style={{
+            fontSize: '1.25rem',
+            lineHeight: 1.8,
+            color: 'var(--text-primary)',
             fontWeight: '300',
             marginBottom: '3rem',
             fontFamily: 'var(--font-heading)',
@@ -176,9 +176,9 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
             {post.excerpt}
           </div>
 
-          <div style={{ 
-            fontSize: '1.1rem', 
-            lineHeight: 1.8, 
+          <div style={{
+            fontSize: '1.1rem',
+            lineHeight: 1.8,
             color: 'var(--text-secondary)',
             marginBottom: '4rem'
           }}>
@@ -194,16 +194,16 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
           </div>
 
           {/* Social Share & Back */}
-          <div style={{ 
-            display: 'flex', 
-            justifyContent: 'space-between', 
+          <div style={{
+            display: 'flex',
+            justifyContent: 'space-between',
             alignItems: 'center',
             paddingTop: '2rem',
             borderTop: '1px solid rgba(0,0,0,0.1)',
             flexWrap: 'wrap',
             gap: '2rem'
           }}>
-            <Link href="/blog" style={{ 
+            <Link href="/blog" style={{
               display: 'inline-flex',
               alignItems: 'center',
               gap: '0.5rem',
