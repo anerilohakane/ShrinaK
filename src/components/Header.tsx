@@ -46,7 +46,7 @@ export default function Header({ theme = 'light' }: { theme?: 'light' | 'dark' }
             <path d="M12 6c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6-2.69-6-6-6zm0 10c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4z" fill="var(--accent)" />
           </svg>
           <span style={{ fontSize: '1.2rem', fontWeight: '400', color: textColor, letterSpacing: '0.05em', fontFamily: 'var(--font-heading)' }}>SHRINA</span>
-          <span style={{ fontSize: '0.5rem', color: textColor, letterSpacing: '0.1em' }}>Korean Asthetic Clinic</span>
+          <span style={{ fontSize: '0.5rem', color: textColor, letterSpacing: '0.1em' }}>Korean Aesthetic Clinic</span>
         </Link>
 
         {/* Main Nav */}
