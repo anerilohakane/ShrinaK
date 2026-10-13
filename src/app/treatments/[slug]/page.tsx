@@ -37,31 +37,28 @@ export default async function TreatmentDetailPage({ params }: { params: { slug: 
     <>
       <Header theme="dark" />
       
-      <main style={{ paddingTop: '10rem', paddingBottom: '6rem', minHeight: '100vh', background: 'var(--background)' }}>
-        <div className="container" style={{ display: 'flex', flexDirection: 'column', gap: '6rem' }}>
+      <main style={{ paddingTop: '8rem', paddingBottom: '5rem', minHeight: '100vh', background: 'var(--background)' }}>
+        <div className="container" style={{ display: 'flex', flexDirection: 'column', gap: '4rem' }}>
           
-          <div style={{ 
-            display: 'grid', 
-            gridTemplateColumns: '1fr 1fr', 
-            gap: '4rem',
-            alignItems: 'center',
+          <div className="treatment-detail-card" style={{ 
             background: '#fff',
             borderRadius: '24px',
             overflow: 'hidden',
             boxShadow: '0 4px 40px rgba(0,0,0,0.03)'
           }}>
-            {/* Left Image */}
-            <div style={{ position: 'relative', height: '100%', minHeight: '600px' }}>
+            {/* Image Container */}
+            <div className="treatment-detail-image" style={{ position: 'relative', width: '100%' }}>
               <Image
                 src={imageUrl}
                 alt={title}
                 fill
                 style={{ objectFit: 'cover' }}
+                priority
               />
             </div>
 
-            {/* Right Content */}
-            <div style={{ padding: '4rem 4rem 4rem 0' }}>
+            {/* Content Container */}
+            <div className="treatment-detail-content">
               <span style={{
                 display: 'inline-block',
                 border: '1px solid var(--accent-dark)',
@@ -71,17 +68,17 @@ export default async function TreatmentDetailPage({ params }: { params: { slug: 
                 fontSize: '0.8rem',
                 fontWeight: '600',
                 letterSpacing: '0.1em',
-                marginBottom: '1.5rem'
+                marginBottom: '1.25rem'
               }}>
                 SERVICE
               </span>
               
               <h1 style={{
                 fontFamily: 'var(--font-heading)',
-                fontSize: '3.5rem',
+                fontSize: 'clamp(2.2rem, 5vw, 3.5rem)',
                 color: 'var(--primary)',
                 fontWeight: '400',
-                marginBottom: '1.5rem',
+                marginBottom: '1.25rem',
                 lineHeight: '1.2'
               }}>
                 {title}
@@ -89,9 +86,9 @@ export default async function TreatmentDetailPage({ params }: { params: { slug: 
               
               <p style={{
                 color: 'var(--text-secondary)',
-                fontSize: '1.05rem',
+                fontSize: '1rem',
                 lineHeight: '1.7',
-                marginBottom: '2.5rem'
+                marginBottom: '2rem'
               }}>
                 This is a detailed description for {title}. Experience the pinnacle of our {title.toLowerCase()} specifically tailored to rejuvenate and restore your natural beauty. Combining proven clinical methods and extensive care, we bring the best out of you.
               </p>
@@ -99,11 +96,11 @@ export default async function TreatmentDetailPage({ params }: { params: { slug: 
               <a href="https://wa.me/918979797220" target="_blank" rel="noopener noreferrer" className="btn" style={{
                 background: 'var(--accent)',
                 color: 'var(--primary)',
-                padding: '1rem 2.5rem',
+                padding: '0.9rem 2.2rem',
                 borderRadius: '9999px',
                 border: 'none',
                 fontWeight: '600',
-                fontSize: '1rem',
+                fontSize: '0.95rem',
                 cursor: 'pointer',
                 textDecoration: 'none',
                 display: 'inline-flex'

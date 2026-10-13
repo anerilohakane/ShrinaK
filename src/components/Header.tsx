@@ -54,16 +54,16 @@ export default function Header({ theme = 'light' }: { theme?: 'light' | 'dark' }
   return (
     <>
       <header className="header" style={{ background: headerBg, borderBottom: showTreatments ? '1px solid rgba(0,0,0,0.05)' : 'none', position: 'absolute', width: '100%', zIndex: 100, transition: 'background 0.3s' }}>
-        <div className="container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', height: '90px' }}>
+        <div className="container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', minHeight: '75px', height: '90px', gap: '0.5rem' }}>
 
           {/* Logo */}
-          <Link href="/" style={{ display: 'flex', alignItems: 'center', textDecoration: 'none' }}>
-            <div style={{ position: 'relative', width: '170px', height: '56px' }}>
+          <Link href="/" style={{ display: 'flex', alignItems: 'center', textDecoration: 'none', flexShrink: 0 }}>
+            <div className="header-logo-container" style={{ position: 'relative' }}>
               <Image 
-                src="/shrina-logo.png" 
+                src={(showTreatments || isDark) ? "/shrina-logo-dark.png" : "/shrina-logo.png"} 
                 alt="Shrina Korean Aesthetic Clinic" 
                 fill 
-                style={{ objectFit: 'contain' }} 
+                style={{ objectFit: 'contain', objectPosition: 'left center' }} 
                 priority
               />
             </div>
@@ -196,8 +196,8 @@ export default function Header({ theme = 'light' }: { theme?: 'light' | 'dark' }
               className="show-on-mobile"
               aria-label="Toggle navigation menu"
               style={{
-                background: 'rgba(255, 255, 255, 0.15)',
-                border: '1px solid rgba(255, 255, 255, 0.25)',
+                background: isDark ? 'rgba(28, 46, 37, 0.06)' : 'rgba(255, 255, 255, 0.15)',
+                border: isDark ? '1px solid rgba(28, 46, 37, 0.15)' : '1px solid rgba(255, 255, 255, 0.25)',
                 backdropFilter: 'blur(8px)',
                 cursor: 'pointer',
                 padding: '10px',
@@ -284,7 +284,7 @@ export default function Header({ theme = 'light' }: { theme?: 'light' | 'dark' }
         }}>
           <div style={{ position: 'relative', width: '140px', height: '46px' }}>
             <Image
-              src="/shrina-logo.png"
+              src="/shrina-logo-dark.png"
               alt="Shrina Logo"
               fill
               style={{ objectFit: 'contain' }}
