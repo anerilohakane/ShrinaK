@@ -12,17 +12,13 @@ export default function Footer() {
           {/* Brand Column */}
           <div>
             <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', marginBottom: '1.5rem' }}>
-              <div style={{ position: 'relative', width: '80px', height: '100px', marginBottom: '0.5rem' }}>
+              <div style={{ position: 'relative', width: '220px', height: '75px', marginBottom: '0.5rem' }}>
                 <Image 
-                  src="/shrina-logo.jpg" 
-                  alt="Shrina Logo" 
+                  src="/shrina-logo.png" 
+                  alt="Shrina Korean Aesthetic Clinic" 
                   fill 
                   style={{ objectFit: 'contain' }} 
                 />
-              </div>
-              <div style={{ textAlign: 'center', fontFamily: 'var(--font-heading)' }}>
-                <h2 style={{ fontSize: '1.8rem', fontWeight: '400', letterSpacing: '0.05em', margin: 0, lineHeight: 1, color: 'var(--accent)' }}>Shrina </h2>
-                <span style={{ fontSize: '0.7rem', letterSpacing: '0.15em', opacity: 0.8, color: 'var(--accent)' }}>skin clinic</span>
               </div>
             </div>
 

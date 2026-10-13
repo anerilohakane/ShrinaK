@@ -37,7 +37,7 @@ export default function About() {
             fontWeight: '400',
             lineHeight: '1.1'
           }}>
-            Meet Our <span style={{ color: '#B69359' }}>Specialist</span>
+            Meet Our <span style={{ color: '#B69359' }}>Founder</span>
           </h2>
         </motion.div>
 
@@ -91,7 +91,7 @@ export default function About() {
                 Her approach focuses on natural-looking results, patient safety, precision and personalised care, while keeping every treatment aligned with the patient’s goals and clinical needs.
               </p>
 
-              <h4 style={{ fontFamily: 'var(--font-heading)', fontSize: '1.5rem', color: 'var(--primary)', marginTop: '1rem' }}>Dr. Sneha’s Key Features</h4>
+              <h4 style={{ fontFamily: 'var(--font-heading)', fontSize: '1.5rem', color: 'var(--primary)', marginTop: '1rem' }}>Expertise You Can Trust</h4>
 
               <ul style={{
                 display: 'grid',

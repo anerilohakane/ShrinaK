@@ -40,17 +40,16 @@ export default function Header({ theme = 'light' }: { theme?: 'light' | 'dark' }
       <div className="container" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', height: '90px' }}>
 
         {/* Logo */}
-        <Link href="/" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textDecoration: 'none' }}>
-          <div style={{ position: 'relative', width: '50px', height: '65px', marginBottom: '4px' }}>
+        <Link href="/" style={{ display: 'flex', alignItems: 'center', textDecoration: 'none' }}>
+          <div style={{ position: 'relative', width: '190px', height: '62px' }}>
             <Image 
-              src="/shrina-logo.jpg" 
-              alt="Shrina Logo" 
+              src="/shrina-logo.png" 
+              alt="Shrina Korean Aesthetic Clinic" 
               fill 
               style={{ objectFit: 'contain' }} 
+              priority
             />
           </div>
-          <span style={{ fontSize: '1.2rem', fontWeight: '400', color: textColor, letterSpacing: '0.05em', fontFamily: 'var(--font-heading)' }}>SHRINA</span>
-          <span style={{ fontSize: '0.5rem', color: textColor, letterSpacing: '0.1em' }}>Korean Aesthetic Clinic</span>
         </Link>
 
         {/* Main Nav */}

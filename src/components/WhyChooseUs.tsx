@@ -38,7 +38,7 @@ export default function WhyChooseUs() {
         </svg>
       ),
       title: "Skincare, Personalised to You",
-      desc: "Your skin has its own story. That's why every treatment plan at Yeppeun starts with a one-on-one consultation. Never one-size-fits-all."
+      desc: "Your skin has its own story. That's why every treatment plan at Shrina Korean Aesthetic Clinic starts with a one-on-one consultation. Never one-size-fits-all."
     },
     {
       icon: (
@@ -49,7 +49,7 @@ export default function WhyChooseUs() {
         </svg>
       ),
       title: "Results Our Clients Come Back For",
-      desc: "From glass-skin glow to visible scar and pigmentation correction, our loyal clientele and growing list of success stories speak for themselves."
+      desc: "From glass-skin glow to visible scar and pigmentation correction, our loyal clients and growing list of success stories speak for themselves."
     }
   ];
 

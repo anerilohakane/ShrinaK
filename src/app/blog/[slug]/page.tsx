@@ -186,7 +186,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
               {post.content}
             </p>
             <p style={{ marginBottom: '1.5rem' }}>
-              At Shrina Skin Clinic, we believe that education is just as important as the treatments we provide. Understanding your skin and the science behind aesthetic medicine empowers you to make the best decisions for your beauty journey.
+              At Shrina Korean Aesthetic Clinic, we believe that education is just as important as the treatments we provide. Understanding your skin and the science behind aesthetic medicine empowers you to make the best decisions for your beauty journey.
             </p>
             <p>
               To explore how this applies specifically to your unique skin profile, we invite you to book a personalized consultation with our expert dermatologists and aestheticians. Let us craft a bespoke treatment plan designed exclusively for you.
