@@ -8,21 +8,26 @@ import { motion, AnimatePresence } from "framer-motion";
 const slides = [
   {
     id: 1,
+    image: "/shrina-clinic-lounge.jpg",
+    alt: "Shrina Korean Aesthetic Clinic Lounge",
+  },
+  {
+    id: 2,
     image: "https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?auto=format&fit=crop&q=80&w=2000",
     alt: "Luxurious Skin Treatment",
   },
   {
-    id: 2,
+    id: 3,
     image: "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&q=80&w=2000",
     alt: "Relaxing Spa Experience",
   },
   {
-    id: 3,
+    id: 4,
     image: "https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?auto=format&fit=crop&q=80&w=2000",
     alt: "Pune Skyline Luxury",
   },
   {
-    id: 4,
+    id: 5,
     image: "https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?auto=format&fit=crop&q=80&w=2000",
     alt: "Professional Aesthetic Care",
   }
