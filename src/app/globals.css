@@ -184,6 +184,13 @@ section {
   .hide-on-mobile {
     display: none !important;
   }
+  .show-on-mobile {
+    display: flex !important;
+  }
+}
+
+.show-on-mobile {
+  display: none;
 }
 
 @media (max-width: 768px) {
