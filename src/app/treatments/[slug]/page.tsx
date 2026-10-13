@@ -11,7 +11,23 @@ export default async function TreatmentDetailPage({ params }: { params: { slug: 
   // Determine a relevant image based on the treatment slug
   let imageUrl = "/treatment_skin_brush.jpg"; // User requested image for default skin treatments
 
-  if (slug.includes('exosome')) {
+  if (slug.includes('hydra')) {
+    imageUrl = "/hydra-facial.jpg"; // User uploaded Hydra Facial image
+  } else if (slug.includes('hollywood')) {
+    imageUrl = "/hollywood-facial.jpg"; // User uploaded Hollywood Facial image
+  } else if (slug.includes('scar')) {
+    imageUrl = "/scar-removal.jpg"; // User uploaded Scar Removal image
+  } else if (slug.includes('mole')) {
+    imageUrl = "/mole-removal.jpg"; // User uploaded Mole Removal image
+  } else if (slug.includes('iv') || slug.includes('drip') || slug.includes('fat-loss')) {
+    imageUrl = "/iv-drip.jpg"; // User uploaded IV Drip image
+  } else if (slug.includes('mnrf')) {
+    imageUrl = "/mnrf.jpg"; // User uploaded MNRF treatment image
+  } else if (slug.includes('subcis') || slug.includes('subscious')) {
+    imageUrl = "/subcision.jpg"; // User uploaded Subcision acne scar treatment image
+  } else if (slug.includes('face-prp')) {
+    imageUrl = "/face-prp.jpg"; // User uploaded Face PRP image
+  } else if (slug.includes('exosome')) {
     imageUrl = "/exosomes.jpg"; // User uploaded Exosomes treatment image
   } else if (slug.includes('prp')) {
     imageUrl = "/prp-treatment.jpg"; // User uploaded PRP treatment image
@@ -21,10 +37,14 @@ export default async function TreatmentDetailPage({ params }: { params: { slug: 
     imageUrl = "/microneedling.jpg"; // User uploaded Microneedling treatment image
   } else if (slug.includes('korean')) {
     imageUrl = "/treatment_korean.jpg"; // User requested image for Korean treatments
+  } else if (slug.includes('hair-reduction') || slug.includes('laser-hair')) {
+    imageUrl = "/laser-hair-reduction.jpg"; // User uploaded Laser Hair Reduction image
   } else if (slug.includes('hair') || slug.includes('gfc') || slug.includes('meso')) {
     imageUrl = "/hair-treatment.jpg"; // User uploaded hair treatment image
-  } else if (slug.includes('laser') || slug.includes('tattoo')) {
-    imageUrl = "/treatment_hair_real.jpg"; // User requested image for laser treatments
+  } else if (slug.includes('tattoo')) {
+    imageUrl = "/tattoo-removal.jpg"; // User uploaded Tattoo Removal image
+  } else if (slug.includes('laser')) {
+    imageUrl = "/treatment_hair_real.jpg"; // User requested image for other laser treatments
   } else if (slug.includes('lip')) {
     imageUrl = "/lip-tint.jpg"; // User uploaded lip tint image
   } else if (slug.includes('glow')) {
