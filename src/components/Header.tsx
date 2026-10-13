@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 
 export default function Header({ theme = 'light' }: { theme?: 'light' | 'dark' }) {
@@ -40,11 +41,14 @@ export default function Header({ theme = 'light' }: { theme?: 'light' | 'dark' }
 
         {/* Logo */}
         <Link href="/" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', textDecoration: 'none' }}>
-          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ marginBottom: '4px' }}>
-            {/* Generic placeholder for their floral logo */}
-            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z" fill="var(--accent)" />
-            <path d="M12 6c-3.31 0-6 2.69-6 6s2.69 6 6 6 6-2.69 6-6-2.69-6-6-6zm0 10c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4z" fill="var(--accent)" />
-          </svg>
+          <div style={{ position: 'relative', width: '50px', height: '65px', marginBottom: '4px' }}>
+            <Image 
+              src="/shrina-logo.jpg" 
+              alt="Shrina Logo" 
+              fill 
+              style={{ objectFit: 'contain' }} 
+            />
+          </div>
           <span style={{ fontSize: '1.2rem', fontWeight: '400', color: textColor, letterSpacing: '0.05em', fontFamily: 'var(--font-heading)' }}>SHRINA</span>
           <span style={{ fontSize: '0.5rem', color: textColor, letterSpacing: '0.1em' }}>Korean Aesthetic Clinic</span>
         </Link>
@@ -143,6 +147,7 @@ export default function Header({ theme = 'light' }: { theme?: 'light' | 'dark' }
               )}
             </li>
 
+            <li><Link href="/team" style={{ color: textColor, fontSize: '0.95rem', fontWeight: '500', textDecoration: 'none' }}>Team</Link></li>
             <li><a href="/#about" style={{ color: textColor, fontSize: '0.95rem', fontWeight: '500', textDecoration: 'none' }}>About Us</a></li>
             <li><Link href="/blog" style={{ color: textColor, fontSize: '0.95rem', fontWeight: '500', textDecoration: 'none' }}>Blog</Link></li>
             <li><Link href="/book" style={{ color: textColor, fontSize: '0.95rem', fontWeight: '500', textDecoration: 'none' }}>Book Now</Link></li>

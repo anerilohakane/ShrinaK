@@ -57,7 +57,7 @@ export default function Hero() {
           transition={{ duration: 1.5, ease: "easeInOut" }}
           style={{ position: 'absolute', inset: 0, zIndex: 0 }}
         >
-          <Image
+          <Image 
             src={slides[currentSlide].image}
             alt={slides[currentSlide].alt}
             fill

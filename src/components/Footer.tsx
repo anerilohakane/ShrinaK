@@ -12,18 +12,14 @@ export default function Footer() {
           {/* Brand Column */}
           <div>
             <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', marginBottom: '1.5rem' }}>
-              {/* Mandala SVG placeholder for Shrina  logo */}
-              <svg width="60" height="60" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" style={{ marginBottom: '0.5rem' }}>
-                <path d="M50 10C50 10 65 30 50 50C35 30 50 10 50 10Z" stroke="var(--accent)" strokeWidth="2" />
-                <path d="M50 90C50 90 65 70 50 50C35 70 50 90 50 90Z" stroke="var(--accent)" strokeWidth="2" />
-                <path d="M90 50C90 50 70 35 50 50C70 65 90 50 90 50Z" stroke="var(--accent)" strokeWidth="2" />
-                <path d="M10 50C10 50 30 35 50 50C30 65 10 50 10 50Z" stroke="var(--accent)" strokeWidth="2" />
-                <path d="M78 22C78 22 70 45 50 50C60 30 78 22 78 22Z" stroke="var(--accent)" strokeWidth="2" />
-                <path d="M22 78C22 78 30 55 50 50C40 70 22 78 22 78Z" stroke="var(--accent)" strokeWidth="2" />
-                <path d="M22 22C22 22 45 30 50 50C30 40 22 22 22 22Z" stroke="var(--accent)" strokeWidth="2" />
-                <path d="M78 78C78 78 55 70 50 50C70 60 78 78 78 78Z" stroke="var(--accent)" strokeWidth="2" />
-                <circle cx="50" cy="50" r="10" stroke="var(--accent)" strokeWidth="2" />
-              </svg>
+              <div style={{ position: 'relative', width: '80px', height: '100px', marginBottom: '0.5rem' }}>
+                <Image 
+                  src="/shrina-logo.jpg" 
+                  alt="Shrina Logo" 
+                  fill 
+                  style={{ objectFit: 'contain' }} 
+                />
+              </div>
               <div style={{ textAlign: 'center', fontFamily: 'var(--font-heading)' }}>
                 <h2 style={{ fontSize: '1.8rem', fontWeight: '400', letterSpacing: '0.05em', margin: 0, lineHeight: 1, color: 'var(--accent)' }}>Shrina </h2>
                 <span style={{ fontSize: '0.7rem', letterSpacing: '0.15em', opacity: 0.8, color: 'var(--accent)' }}>skin clinic</span>
