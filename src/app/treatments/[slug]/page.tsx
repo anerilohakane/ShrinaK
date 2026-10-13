@@ -11,9 +11,17 @@ export default async function TreatmentDetailPage({ params }: { params: { slug: 
   // Determine a relevant image based on the treatment slug
   let imageUrl = "/treatment_skin_brush.jpg"; // User requested image for default skin treatments
 
-  if (slug.includes('korean')) {
+  if (slug.includes('exosome')) {
+    imageUrl = "/exosomes.jpg"; // User uploaded Exosomes treatment image
+  } else if (slug.includes('prp')) {
+    imageUrl = "/prp-treatment.jpg"; // User uploaded PRP treatment image
+  } else if (slug.includes('scalp')) {
+    imageUrl = "/korean-scalp.jpg"; // User uploaded Korean Scalp treatment image
+  } else if (slug.includes('microneedling')) {
+    imageUrl = "/microneedling.jpg"; // User uploaded Microneedling treatment image
+  } else if (slug.includes('korean')) {
     imageUrl = "/treatment_korean.jpg"; // User requested image for Korean treatments
-  } else if (slug.includes('hair') || slug.includes('scalp') || slug.includes('gfc') || slug.includes('exosome') || slug.includes('prp') || slug.includes('meso') || slug.includes('microneedling')) {
+  } else if (slug.includes('hair') || slug.includes('gfc') || slug.includes('meso')) {
     imageUrl = "/hair-treatment.jpg"; // User uploaded hair treatment image
   } else if (slug.includes('laser') || slug.includes('tattoo')) {
     imageUrl = "/treatment_hair_real.jpg"; // User requested image for laser treatments
