@@ -31,15 +31,15 @@ export default function Header({ theme = 'light' }: { theme?: 'light' | 'dark' }
   const categories = [
     {
       name: 'HAIR',
-      items: ['GFC', 'Exosomes', 'PRP', 'Meso', 'Korean Scalp Treatment', 'Microneedling']
+      items: ['GFC', 'Exosomes', 'PRP', 'PRP + Biotin', 'Meso', 'Korean Scalp Treatment', 'Microneedling']
     },
     {
       name: 'SKIN',
-      items: ['Hydra Facial', 'Carbon Laser', 'Chemical Peels', 'Face PRP', 'Face Microneedling', 'Subcision', 'MNRF', 'Laser Hair Reduction', 'Mummy Mask Facial', 'Glutathione IV Drip', 'Fat Loss IV Drip', 'Mole Removal', 'Korean Peel']
+      items: ['Hydra Facial', 'Hollywood Facial', 'Chemical Peels', 'Face PRP', 'Face Microneedling', 'Subcision', 'MNRF', 'Mummy Mask Facial', 'Glutathione IV Drip', 'Fat Loss IV Drip', 'Mole Removal', 'Korean Peel']
     },
     {
       name: 'LASER',
-      items: ['Laser Hair Reduction', 'Fractional Laser Treatment', 'Scar Removal Treatment', 'Tattoo Removal', 'Hollywood Facial']
+      items: ['Laser Hair Reduction', 'CO2 Fractional Laser', 'Scar Removal Treatment', 'Tattoo Removal', 'Carbon Laser Treatment']
     },
     {
       name: 'SEMI-PERMANENT MAKEUP',

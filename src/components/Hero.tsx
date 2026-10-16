@@ -13,18 +13,18 @@ const slides = [
   },
   {
     id: 2,
-    image: "https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?auto=format&fit=crop&q=80&w=2000",
-    alt: "Luxurious Skin Treatment",
+    image: "/clinic-consultation-room.jpg",
+    alt: "Modern Clinic Consultation & Treatment Room",
   },
   {
     id: 3,
-    image: "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&q=80&w=2000",
-    alt: "Relaxing Spa Experience",
+    image: "/clinic-products-shelf.jpg",
+    alt: "Korean Aesthetic Formulations & Clinic Interior",
   },
   {
     id: 4,
-    image: "https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?auto=format&fit=crop&q=80&w=2000",
-    alt: "Pune Skyline Luxury",
+    image: "https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?auto=format&fit=crop&q=80&w=2000",
+    alt: "Luxurious Skin Treatment",
   },
   {
     id: 5,

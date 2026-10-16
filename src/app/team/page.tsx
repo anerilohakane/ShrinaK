@@ -9,10 +9,30 @@ export default function TeamPage() {
       name: "Dr. Sneha Wanve",
       title: "Aesthetic Physician | 5+ Years of Experience",
       image: "/dr-sneha-profile.jpg",
+      isLead: true,
       bio: [
         "Dr. Sneha Wanve is an experienced Aesthetic Physician with over 5 years of experience in aesthetic and cosmetic care. She completed her medical graduation from Maharashtra University of Health Sciences (MUHS), Nashik, and has developed a strong clinical focus on personalised aesthetic treatments.",
         "At Shrina Korean Aesthetic Clinic, Dr. Sneha combines medical expertise with modern aesthetic techniques to create personalised treatment plans based on each patient’s individual skin, hair and aesthetic concerns.",
         "Her approach focuses on natural-looking results, patient safety, precision and personalised care, while keeping every treatment aligned with the patient’s goals and clinical needs."
+      ]
+    },
+    {
+      name: "Dr. Pooja Nagargoje",
+      title: "Aesthetic & Cosmetology Professional | Skin & Hair Care",
+      image: "/dr-pooja.jpg",
+      bio: [
+        "Passionate about healthy skin and natural beauty, Dr. Pooja believes in personalised aesthetic care that enhances confidence while preserving individuality.",
+        "“Enhance your natural beauty, embrace your confidence.”"
+      ]
+    },
+    {
+      name: "Dr. Vaibhavi Manjare",
+      title: "Consultant Aesthetic Physician",
+      image: "/dr-vaibhavi.jpg",
+      bio: [
+        "Dedicated to personalised aesthetic care, Dr. Vaibhavi Manjare combines precision, artistry, and a patient-focused approach to create naturally beautiful and harmonious results.",
+        "Driven by a passion for aesthetics and an eye for detail, Dr. Vaibhavi Manjare believes in enhancing individuality rather than changing it. Her approach combines personalised care, refined techniques, and a commitment to natural-looking, sophisticated results.",
+        "“Aesthetics is not about changing who you are; it’s about enhancing what already makes you uniquely you.”"
       ]
     },
     {
@@ -43,16 +63,6 @@ export default function TeamPage() {
       ]
     },
     {
-      name: "Dr. Vaibhavi Manjare",
-      title: "Consultant Aesthetic Physician",
-      image: "/dr-vaibhavi.jpg",
-      bio: [
-        "Dedicated to personalised aesthetic care, Dr. Vaibhavi Manjare combines precision, artistry, and a patient-focused approach to create naturally beautiful and harmonious results.",
-        "Driven by a passion for aesthetics and an eye for detail, Dr. Vaibhavi Manjare believes in enhancing individuality rather than changing it. Her approach combines personalised care, refined techniques, and a commitment to natural-looking, sophisticated results.",
-        "“Aesthetics is not about changing who you are; it’s about enhancing what already makes you uniquely you.”"
-      ]
-    },
-    {
       name: "Dr. Vyankatesh Kalyankar",
       title: "PCOS & Hormonal Health Consultant",
       image: "",
@@ -62,13 +72,13 @@ export default function TeamPage() {
       ]
     },
     {
-      name: "Dr. Sakshi Mengade",
+      name: "Sakshi Mengade",
       title: "Aesthetic Technician",
       image: "/sakshi-mengade.jpg",
       bio: [
         "Sakshi is a skilled aesthetic technician with a passion for advanced skin and beauty treatments. Specialising in HydraFacial and a range of aesthetic procedures, she combines technical precision with a gentle, detail-oriented approach to deliver a comfortable and elevated treatment experience.",
         "With a strong eye for detail and a commitment to personalised care, Sakshi focuses on enhancing skin health, radiance, and overall appearance—ensuring every treatment is tailored to the individual’s needs.",
-        "Precision in every step. Care in every detail."
+        "“Precision in every step. Care in every detail.”"
       ]
     }
   ];
@@ -77,15 +87,15 @@ export default function TeamPage() {
     <>
       <Header theme="light" />
       <main style={{ minHeight: '100vh', background: '#FCFAF5' }}>
-        
+
         {/* Hero Section */}
-        <div style={{ 
-          position: 'relative', 
-          width: '100%', 
+        <div style={{
+          position: 'relative',
+          width: '100%',
           height: '50vh',
           minHeight: '400px',
-          display: 'flex', 
-          alignItems: 'center', 
+          display: 'flex',
+          alignItems: 'center',
           justifyContent: 'center',
           flexDirection: 'column',
           backgroundImage: 'url("https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&q=80&w=1920")',
@@ -96,11 +106,11 @@ export default function TeamPage() {
         }}>
           {/* Dark Overlay */}
           <div style={{ position: 'absolute', inset: 0, background: 'rgba(28, 46, 37, 0.6)' }}></div>
-          
+
           <div style={{ position: 'relative', zIndex: 1, textAlign: 'center', color: '#fff' }}>
-            <h1 style={{ 
-              fontFamily: 'var(--font-heading)', 
-              fontSize: 'clamp(3rem, 5vw, 4.5rem)', 
+            <h1 style={{
+              fontFamily: 'var(--font-heading)',
+              fontSize: 'clamp(3rem, 5vw, 4.5rem)',
               fontWeight: '400',
               marginBottom: '1rem',
               letterSpacing: '0.02em',
@@ -116,37 +126,46 @@ export default function TeamPage() {
         </div>
 
         {/* Content Section - Alternating Layout */}
-        <div className="container" style={{ maxWidth: '1200px', margin: '0 auto', padding: '8rem 2rem' }}>
-          
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '8rem' }}>
+        <div className="container" style={{ maxWidth: '1200px', margin: '0 auto', padding: '6rem 2rem 8rem 2rem' }}>
+
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '6rem' }}>
             {team.map((member, idx) => {
               const isEven = idx % 2 === 0;
+              const isLead = member.isLead;
               // Get initials for placeholder
               const initials = member.name.split(' ').map(n => n[0]).join('').substring(0, 2).toUpperCase();
 
               return (
-                <div 
-                  key={idx} 
-                  style={{ 
+                <div
+                  key={idx}
+                  style={{
                     display: 'flex',
                     flexDirection: isEven ? 'row' : 'row-reverse',
-                    gap: '5rem',
+                    gap: isLead ? '5rem' : '4rem',
                     alignItems: 'center',
-                    flexWrap: 'wrap'
+                    flexWrap: 'wrap',
+                    padding: isLead ? '2.5rem' : '0',
+                    background: isLead ? '#FAF6EE' : 'transparent',
+                    borderRadius: isLead ? '28px' : '0',
+                    border: isLead ? '1px solid rgba(168, 130, 70, 0.25)' : 'none',
+                    boxShadow: isLead ? '0 15px 35px rgba(28, 46, 37, 0.05)' : 'none'
                   }}
                 >
                   {/* Image Container */}
-                  <div style={{ 
-                    flex: '1 1 400px',
-                    position: 'relative', 
-                    height: '550px', 
-                    borderRadius: '24px', 
-                    overflow: 'hidden', 
-                    boxShadow: '0 20px 40px rgba(0,0,0,0.08)',
+                  <div style={{
+                    flex: isLead ? '1 1 420px' : '0 1 330px',
+                    width: isLead ? '100%' : '330px',
+                    maxWidth: isLead ? '480px' : '330px',
+                    position: 'relative',
+                    height: isLead ? '540px' : '390px',
+                    borderRadius: isLead ? '24px' : '20px',
+                    overflow: 'hidden',
+                    boxShadow: isLead ? '0 20px 40px rgba(0,0,0,0.12)' : '0 12px 30px rgba(0,0,0,0.06)',
                     background: 'var(--surface-alt)',
                     display: 'flex',
                     alignItems: 'center',
-                    justifyContent: 'center'
+                    justifyContent: 'center',
+                    border: isLead ? '3px solid var(--accent)' : '1px solid rgba(0,0,0,0.06)'
                   }}>
                     {member.image ? (
                       <Image
@@ -157,48 +176,67 @@ export default function TeamPage() {
                       />
                     ) : (
                       <div style={{ textAlign: 'center', color: 'var(--accent)' }}>
-                        <span style={{ fontFamily: 'var(--font-heading)', fontSize: '5rem', opacity: 0.5 }}>{initials}</span>
-                        <p style={{ marginTop: '1rem', fontSize: '0.9rem', letterSpacing: '0.1em', textTransform: 'uppercase', opacity: 0.7 }}>Photo Coming Soon</p>
+                        <span style={{ fontFamily: 'var(--font-heading)', fontSize: '4.5rem', opacity: 0.5 }}>{initials}</span>
+                        <p style={{ marginTop: '0.8rem', fontSize: '0.85rem', letterSpacing: '0.1em', textTransform: 'uppercase', opacity: 0.7 }}>Photo Coming Soon</p>
+                      </div>
+                    )}
+
+                    {isLead && (
+                      <div style={{
+                        position: 'absolute',
+                        top: '16px',
+                        left: '16px',
+                        background: 'var(--primary)',
+                        color: 'var(--accent)',
+                        padding: '0.4rem 1rem',
+                        borderRadius: '30px',
+                        fontSize: '0.75rem',
+                        fontWeight: '600',
+                        letterSpacing: '0.1em',
+                        textTransform: 'uppercase',
+                        boxShadow: '0 4px 12px rgba(0,0,0,0.2)'
+                      }}>
+                        Lead Physician
                       </div>
                     )}
                   </div>
 
                   {/* Text Container */}
-                  <div style={{ flex: '1 1 400px', display: 'flex', flexDirection: 'column', gap: '1.5rem' }}>
-                    <div style={{ display: 'flex', alignItems: 'center', gap: '1rem' }}>
-                      <div style={{ width: '4px', height: '40px', background: 'var(--accent)', borderRadius: '2px' }}></div>
-                      <h2 style={{ 
-                        fontFamily: 'var(--font-heading)', 
-                        fontSize: '2.8rem', 
-                        color: 'var(--primary)', 
+                  <div style={{ flex: '1 1 360px', display: 'flex', flexDirection: 'column', gap: '1.2rem' }}>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '0.9rem' }}>
+                      <div style={{ width: isLead ? '5px' : '3px', height: isLead ? '42px' : '32px', background: 'var(--accent)', borderRadius: '2px' }}></div>
+                      <h2 style={{
+                        fontFamily: 'var(--font-heading)',
+                        fontSize: isLead ? '2.8rem' : '2.1rem',
+                        color: 'var(--primary)',
                         margin: 0,
                         lineHeight: '1.2'
                       }}>
                         {member.name}
                       </h2>
                     </div>
-                    
-                    <p style={{ 
-                      color: 'var(--accent-dark)', 
-                      fontWeight: '600', 
-                      fontSize: '1.1rem', 
-                      textTransform: 'uppercase', 
+
+                    <p style={{
+                      color: 'var(--accent-dark)',
+                      fontWeight: '600',
+                      fontSize: isLead ? '1.05rem' : '0.95rem',
+                      textTransform: 'uppercase',
                       letterSpacing: '0.05em',
-                      marginTop: '-0.5rem'
+                      marginTop: '-0.3rem'
                     }}>
                       {member.title}
                     </p>
-                    
-                    <div style={{ 
-                      display: 'flex', 
-                      flexDirection: 'column', 
-                      gap: '1.2rem', 
-                      color: 'var(--text-secondary)', 
-                      fontSize: '1.1rem', 
-                      lineHeight: '1.8' 
+
+                    <div style={{
+                      display: 'flex',
+                      flexDirection: 'column',
+                      gap: '1rem',
+                      color: 'var(--text-secondary)',
+                      fontSize: isLead ? '1.05rem' : '0.98rem',
+                      lineHeight: '1.75'
                     }}>
                       {member.bio.map((paragraph, pIdx) => (
-                        <p key={pIdx}>{paragraph}</p>
+                        <p key={pIdx} style={{ margin: 0 }}>{paragraph}</p>
                       ))}
                     </div>
                   </div>

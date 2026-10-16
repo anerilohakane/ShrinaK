@@ -171,10 +171,10 @@ export default function Treatments() {
               </div>
               <div style={{ position: 'relative', height: '250px', width: '100%' }}>
                 <Image
-                  src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&q=80&w=800"
+                  src="/consultation-service.jpg"
                   alt="Consultation"
                   fill
-                  style={{ objectFit: 'cover', borderTopLeftRadius: '24px', borderTopRightRadius: '24px' }}
+                  style={{ objectFit: 'cover', objectPosition: 'center 85%', borderTopLeftRadius: '24px', borderTopRightRadius: '24px' }}
                 />
               </div>
             </div>

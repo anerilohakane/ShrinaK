@@ -164,8 +164,8 @@ export default function About() {
             <div style={{ position: 'relative' }}>
               <div style={{ position: 'relative', height: '600px', borderRadius: '24px 24px 24px 200px', overflow: 'hidden', boxShadow: '0 20px 40px rgba(0,0,0,0.06)' }}>
                 <Image
-                  src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&q=80&w=1000"
-                  alt="Clinic Interior"
+                  src="/clinic-consultation-room.jpg"
+                  alt="Shrina Korean Aesthetic Clinic Consultation Room"
                   fill
                   style={{ objectFit: 'cover' }}
                 />

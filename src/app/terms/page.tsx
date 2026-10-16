@@ -187,7 +187,7 @@ export default function TermsOfService() {
               <p style={{ marginBottom: '0.2rem' }}><strong>Shrina Korean Aesthetic Clinic</strong></p>
               <p style={{ marginBottom: '1rem' }}>Kothrud & Viman Nagar, Pune, Maharashtra</p>
               <p style={{ marginBottom: '0.2rem' }}><strong>Phone:</strong> +91 89797 97220</p>
-              <p style={{ marginBottom: '1.5rem' }}><strong>Email:</strong> Shrina skinclinic@gmail.com</p>
+              <p style={{ marginBottom: '1.5rem' }}><strong>Email:</strong> <a href="mailto:shrinakbeauty1999@gmail.com" style={{ color: 'var(--primary)', textDecoration: 'none' }}>shrinakbeauty1999@gmail.com</a></p>
               <p style={{ marginBottom: '0.2rem' }}><strong>Clinic Hours:</strong></p>
               <p>Open: 10:00 AM – 7:00 PM</p>
             </div>

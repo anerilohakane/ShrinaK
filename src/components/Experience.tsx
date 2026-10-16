@@ -24,8 +24,8 @@ export default function Experience() {
             boxShadow: '0 25px 50px rgba(0,0,0,0.1)'
           }}>
             <Image 
-              src="/hero_image.jpg"
-              alt="Client Relaxing"
+              src="/clinic-products-shelf.jpg"
+              alt="Premium Korean Skincare & Aesthetics Products"
               fill
               style={{ objectFit: 'cover' }}
             />
