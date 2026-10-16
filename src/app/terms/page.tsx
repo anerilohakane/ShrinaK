@@ -7,15 +7,15 @@ export default function TermsOfService() {
     <>
       <Header theme="light" />
       <main style={{ minHeight: '100vh', background: '#FCFAF5' }}>
-        
+
         {/* Hero Section */}
-        <div style={{ 
-          position: 'relative', 
-          width: '100%', 
+        <div style={{
+          position: 'relative',
+          width: '100%',
           height: '50vh',
           minHeight: '400px',
-          display: 'flex', 
-          alignItems: 'center', 
+          display: 'flex',
+          alignItems: 'center',
           justifyContent: 'center',
           flexDirection: 'column',
           backgroundImage: 'url("https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&q=80&w=1920")',
@@ -26,11 +26,11 @@ export default function TermsOfService() {
         }}>
           {/* Dark Overlay */}
           <div style={{ position: 'absolute', inset: 0, background: 'rgba(28, 46, 37, 0.5)' }}></div>
-          
+
           <div style={{ position: 'relative', zIndex: 1, textAlign: 'center', color: '#fff' }}>
-            <h1 style={{ 
-              fontFamily: 'var(--font-heading)', 
-              fontSize: 'clamp(3rem, 5vw, 4.5rem)', 
+            <h1 style={{
+              fontFamily: 'var(--font-heading)',
+              fontSize: 'clamp(3rem, 5vw, 4.5rem)',
               fontWeight: '400',
               marginBottom: '1rem',
               letterSpacing: '0.02em',
@@ -47,9 +47,9 @@ export default function TermsOfService() {
 
         {/* Content Section */}
         <div className="container" style={{ maxWidth: '900px', margin: '0 auto', padding: '5rem 2rem' }}>
-          
+
           <div style={{ display: 'flex', flexDirection: 'column', gap: '3rem', color: 'var(--text-primary)', fontSize: '1.05rem', lineHeight: '1.8' }}>
-            
+
             {/* Intro */}
             <div>
               <p style={{ marginBottom: '1.5rem' }}>Welcome to <strong>Shrina Korean Aesthetic Clinic</strong>. These Terms & Conditions ("Terms") govern your use of our website, appointment services, products, treatments, and other services provided by Shrina Korean Aesthetic Clinic.</p>
@@ -71,7 +71,7 @@ export default function TermsOfService() {
               <ul style={{ paddingLeft: '1.5rem', display: 'flex', flexDirection: 'column', gap: '0.8rem', marginBottom: '1.5rem' }}>
                 <li>Use the website for unlawful purposes.</li>
                 <li>Attempt to gain unauthorised access to the website or its systems.</li>
-                <li>Copy, reproduce, modify, or distribute website content without permission.</li>
+                <li>Copy, Reproduce, Modify, or Distribute website content without permission.</li>
                 <li>Interfere with the security or functionality of the website.</li>
                 <li>Submit false, misleading, or fraudulent information.</li>
                 <li>Use the website to transmit harmful software or malicious code.</li>
