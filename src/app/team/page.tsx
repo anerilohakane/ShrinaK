@@ -88,45 +88,86 @@ export default function TeamPage() {
       <Header theme="light" />
       <main style={{ minHeight: '100vh', background: '#FCFAF5' }}>
 
-        {/* Hero Section */}
+        {/* Hero Section with Team Photo Background */}
         <div style={{
           position: 'relative',
           width: '100%',
-          height: '50vh',
-          minHeight: '400px',
+          minHeight: '700px',
+          height: '80vh',
           display: 'flex',
-          alignItems: 'center',
+          alignItems: 'flex-start',
           justifyContent: 'center',
-          flexDirection: 'column',
-          backgroundImage: 'url("https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&q=80&w=1920")',
+          paddingTop: '8rem',
+          backgroundImage: 'url("/team-hero.jpg")',
           backgroundSize: 'cover',
-          backgroundPosition: 'center',
+          backgroundPosition: 'center 2%',
+          backgroundRepeat: 'no-repeat',
           borderRadius: '0 0 40px 40px',
-          overflow: 'hidden'
+          overflow: 'hidden',
+          boxShadow: '0 15px 40px rgba(28, 46, 37, 0.08)'
         }}>
-          {/* Dark Overlay */}
-          <div style={{ position: 'absolute', inset: 0, background: 'rgba(28, 46, 37, 0.6)' }}></div>
+          {/* Subtle Top & Bottom Gradient Overlay for optimal legibility while keeping all faces crisp */}
+          <div style={{
+            position: 'absolute',
+            inset: 0,
+            background: 'linear-gradient(to bottom, rgba(28, 46, 37, 0.75) 0%, rgba(28, 46, 37, 0.25) 28%, rgba(28, 46, 37, 0.0) 55%, rgba(28, 46, 37, 0.6) 100%)',
+            pointerEvents: 'none'
+          }}></div>
 
-          <div style={{ position: 'relative', zIndex: 1, textAlign: 'center', color: '#fff' }}>
+          {/* Hero Content without container box */}
+          <div style={{
+            position: 'relative',
+            zIndex: 1,
+            textAlign: 'center',
+            color: '#fff',
+            maxWidth: '800px',
+            padding: '0.5rem 1rem',
+            margin: '0 auto'
+          }}>
+            <span style={{
+              display: 'inline-block',
+              fontSize: '0.75rem',
+              fontWeight: '600',
+              color: 'var(--accent)',
+              letterSpacing: '0.25em',
+              textTransform: 'uppercase',
+              marginBottom: '0.6rem',
+              border: '1px solid var(--accent)',
+              padding: '0.25rem 0.9rem',
+              borderRadius: '9999px',
+              background: 'rgba(28, 46, 37, 0.35)',
+              backdropFilter: 'blur(4px)',
+              WebkitBackdropFilter: 'blur(4px)',
+              textShadow: '0 2px 8px rgba(0,0,0,0.4)'
+            }}>OUR SPECIALISTS</span>
             <h1 style={{
               fontFamily: 'var(--font-heading)',
-              fontSize: 'clamp(3rem, 5vw, 4.5rem)',
+              fontSize: 'clamp(2.6rem, 5vw, 4.2rem)',
               fontWeight: '400',
-              marginBottom: '1rem',
+              marginBottom: '0.6rem',
               letterSpacing: '0.02em',
-              textShadow: '0 4px 20px rgba(0,0,0,0.1)',
-              color: '#fff'
+              textShadow: '0 4px 24px rgba(0,0,0,0.6), 0 2px 8px rgba(0,0,0,0.8)',
+              color: '#fff',
+              lineHeight: '1.1'
             }}>Meet Our Team</h1>
-            <div style={{ display: 'flex', gap: '0.5rem', justifyContent: 'center', fontSize: '0.9rem', fontWeight: '500', letterSpacing: '0.05em' }}>
-              <Link href="/" style={{ color: '#fff', textDecoration: 'none' }}>Home</Link>
-              <span>&gt;</span>
+            <div style={{ 
+              display: 'flex', 
+              gap: '0.5rem', 
+              justifyContent: 'center', 
+              fontSize: '0.9rem', 
+              fontWeight: '500', 
+              letterSpacing: '0.05em',
+              textShadow: '0 2px 8px rgba(0,0,0,0.7)'
+            }}>
+              <Link href="/" style={{ color: '#fff', textDecoration: 'none', opacity: 0.95 }}>Home</Link>
+              <span style={{ opacity: 0.8 }}>&gt;</span>
               <span style={{ color: 'var(--accent)' }}>Our Team</span>
             </div>
           </div>
         </div>
 
         {/* Content Section - Alternating Layout */}
-        <div className="container" style={{ maxWidth: '1200px', margin: '0 auto', padding: '6rem 2rem 8rem 2rem' }}>
+        <div className="container" style={{ maxWidth: '1200px', margin: '0 auto', padding: '5rem 2rem 8rem 2rem' }}>
 
           <div style={{ display: 'flex', flexDirection: 'column', gap: '6rem' }}>
             {team.map((member, idx) => {

@@ -180,7 +180,7 @@ export default function Treatments() {
             </div>
 
             {/* Card 2 */}
-            <div style={{ background: '#FCFAF5', borderRadius: '32px', display: 'flex', flexDirection: 'column', overflow: 'hidden', height: '600px', boxShadow: '0 4px 20px rgba(0,0,0,0.02)' }}>
+            {/* <div style={{ background: '#FCFAF5', borderRadius: '32px', display: 'flex', flexDirection: 'column', overflow: 'hidden', height: '600px', boxShadow: '0 4px 20px rgba(0,0,0,0.02)' }}>
               <div style={{ padding: '3rem 2.5rem', flex: 1 }}>
                 <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: '2rem', color: '#B69359', marginBottom: '1.5rem', fontWeight: '400' }}>
                   Non Surgical Lifting
@@ -197,7 +197,7 @@ export default function Treatments() {
                   style={{ objectFit: 'cover', borderTopLeftRadius: '24px', borderTopRightRadius: '24px' }}
                 />
               </div>
-            </div>
+            </div> */}
 
             {/* Card 3 */}
             <div style={{ background: '#FCFAF5', borderRadius: '32px', display: 'flex', flexDirection: 'column', overflow: 'hidden', height: '600px', boxShadow: '0 4px 20px rgba(0,0,0,0.02)' }}>
