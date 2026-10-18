@@ -10,49 +10,277 @@ export default function TreatmentsPage() {
       title: "Consultation",
       desc: "Discover a personalised approach to your skin and hair goals. Our expert consultations include a detailed assessment, professional guidance, and customised treatment recommendations tailored to your unique needs.\n\n“Where science meets the art of aesthetics.”",
       img: "/consultation-service.jpg",
-      slug: "consultation"
+      slug: "consultation",
+      area: "Full Face & Scalp",
+      duration: "30-45 minutes",
+      recovery: "None",
+      sessions: "1 initial assessment",
+      results: "Personalised treatment roadmap and customized skincare regimen",
+      idealFor: ["New clients", "Skin concerns", "Hair thinning", "Anti-aging goals", "Customized care"]
     },
     {
       title: "Skin Boosters",
       desc: "Deeply hydrate and revitalize your skin from within using premium micro-injections of hyaluronic acid and nutrients.",
       img: "/skin-booster.jpg",
-      slug: "skin-boosters"
+      slug: "skin-boosters",
+      area: "Face",
+      duration: "30-45 minutes",
+      recovery: "Minimal (24 hours)",
+      sessions: "2-3 initial treatments",
+      results: "Progressive improvement over 4-6 weeks, lasting 6-8 months.",
+      idealFor: ["Dehydrated skin", "Loss of skin radiance", "Aging skin", "Dull, tired complexion", "Fine lines & crepey skin"]
     },
     {
       title: "Korean Facial",
       desc: "Experience the authentic glass skin facial that focuses on deep cleansing, intense hydration, and radiant glow.",
       img: "/treatment_korean.jpg",
-      slug: "korean-facial"
+      slug: "korean-facial",
+      area: "Face & Neck",
+      duration: "60-75 minutes",
+      recovery: "None (Instant glow)",
+      sessions: "Monthly maintenance",
+      results: "Luminous glass-skin clarity, refined pores, and deep cellular hydration",
+      idealFor: ["Congested pores", "Dull skin", "Event preparation", "Uneven texture", "Dehydration"]
     },
     {
       title: "Dermablate Laser Treatments",
       desc: "Advanced erbium laser technology for precise skin resurfacing, scar revision, and comprehensive skin rejuvenation.",
       img: "/treatment_hair_real.jpg",
-      slug: "dermablate-laser"
+      slug: "dermablate-laser",
+      area: "Targeted areas / Full Face",
+      duration: "30-45 minutes",
+      recovery: "3-5 days mild redness",
+      sessions: "2-4 sessions",
+      results: "Dramatic scar reduction, tightened pores, and smoother skin texture",
+      idealFor: ["Acne scars", "Surgical scars", "Enlarged pores", "Skin irregularities", "Sun damage"]
     },
     {
       title: "Korean Anti-Aging",
       desc: "Support healthier, smoother, and more youthful-looking skin with personalized anti-aging treatments.",
       img: "https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&q=80&w=800",
-      slug: "korean-anti-aging"
+      slug: "korean-anti-aging",
+      area: "Face, Neck & Décolleté",
+      duration: "60 minutes",
+      recovery: "None to minimal",
+      sessions: "4-6 sessions",
+      results: "Noticeable firming, reduced wrinkles, and rejuvenated skin elasticity",
+      idealFor: ["Fine lines", "Skin laxity", "Mature skin", "Collagen depletion", "Expression lines"]
     },
     {
       title: "Korean Glass Skin Treatments",
       desc: "Achieve the coveted flawless, translucent complexion through a combination of tailored Korean aesthetic protocols.",
       img: "/bb-glow.jpg",
-      slug: "korean-glass-skin"
+      slug: "korean-glass-skin",
+      area: "Full Face",
+      duration: "60 minutes",
+      recovery: "None",
+      sessions: "3-4 sessions",
+      results: "Dewy translucent glow, even skin tone, and minimized pore appearance",
+      idealFor: ["Pigmentation", "Uneven tone", "Blemish marks", "Dull complexion", "Dry patches"]
     },
     {
       title: "Premium Botox",
       desc: "Expertly administered wrinkle relaxers for natural-looking expression smoothing and facial contouring.",
       img: "/botox-treatment.jpg",
-      slug: "premium-botox"
+      slug: "premium-botox",
+      area: "Upper Face / Jawline",
+      duration: "20-30 minutes",
+      recovery: "Zero downtime",
+      sessions: "Every 4-6 months",
+      results: "Softened expression lines within 3-7 days, full natural smoothing in 14 days",
+      idealFor: ["Forehead lines", "Crow's feet", "Frown lines", "Jaw slimming", "Preventative anti-aging"]
     },
     {
-      title: "Vertue RF Microneedling",
-      desc: "Combine radiofrequency energy with microneedling to stimulate collagen, tighten skin, and improve overall texture.",
-      img: "/treatment_skin_brush.jpg",
-      slug: "vertue-rf-microneedling"
+      title: "MNRF (Microneedling Radiofrequency)",
+      desc: "Advanced radiofrequency microneedling to stimulate deep collagen remodeling, tighten skin, and minimize stubborn acne scars.",
+      img: "/mnrf.jpg",
+      slug: "mnrf",
+      area: "Face",
+      duration: "30-60 minutes",
+      recovery: "Redness & swelling for few days, varies by individual",
+      sessions: "Usually 3-4 sessions, depending on skin concerns.",
+      results: "Gradual improvement in skin texture, firmness & acne scar appearance over several weeks to months.",
+      idealFor: ["Acne scars", "Enlarged pores", "Fine lines", "Skin rejuvenation"]
+    },
+    {
+      title: "Face Microneedling",
+      desc: "Stimulate natural collagen and elastin induction for scar revision, fine line reduction, and deep cellular renewal.",
+      img: "/microneedling.jpg",
+      slug: "face-microneedling",
+      area: "Face, Lips",
+      duration: "30-60 minutes",
+      recovery: "2-5 days",
+      sessions: "3 to 6 sessions for best results",
+      results: "Visible improvement after 2-3 sessions, optimal at 6 months.",
+      idealFor: ["Acne scars", "Surgical scars", "Stretch marks", "Fine lines & wrinkles", "Enlarged pores", "Dehydrated lips"]
+    },
+    {
+      title: "PRP for Face",
+      desc: "Harness your body's own concentrated growth factors to deeply revitalize skin elasticity, repair fine lines, and brighten under-eyes.",
+      img: "/face-prp.jpg",
+      slug: "face-prp",
+      area: "Face",
+      duration: "45-60 mins.",
+      recovery: "24-48 hours",
+      sessions: "3-4 initial sessions, maintenance every 6-12 months.",
+      results: "Gradual improvement over 3-6 months",
+      idealFor: ["Fine lines & wrinkles", "Dull, tired skin", "Loss of skin elasticity", "Under eye dark circles"]
+    },
+    {
+      title: "Chemical Peels",
+      desc: "Medical-grade exfoliating peels designed to strip away sun-damaged layers, diminish melasma, and reveal velvety-soft skin.",
+      img: "/treatment_anti_aging_real.jpg",
+      slug: "chemical-peels",
+      area: "Face, Neck, Hands, Legs, Back",
+      duration: "25-30 minutes",
+      recovery: "7-21 days depending on peel depth",
+      sessions: "Series of 3-6 sessions recommended",
+      results: "Visible improvement after first peel, optimal results after series.",
+      idealFor: ["Sun damaged skin", "Acne", "Uneven skin tone", "Melasma & hyperpigmentation", "Rough skin texture"]
+    },
+    {
+      title: "Hydra Facial",
+      desc: "Multi-step medical hydra-dermabrasion that vacuums out impurities, extracts blackheads, and infuses restorative antioxidant serums.",
+      img: "/hydra-facial.jpg",
+      slug: "hydra-facial",
+      area: "Face",
+      duration: "30 to 45 minutes",
+      recovery: "None required",
+      sessions: "Monthly for optimal results",
+      results: "Immediate glow, cumulative improvement over time.",
+      idealFor: ["Dull, tired skin", "Uneven skin tone", "Dehydrated, dry skin", "Congested pores & blackheads"]
+    },
+    {
+      title: "Laser Hair Reduction",
+      desc: "State-of-the-art diode laser technology for painless, long-lasting hair reduction across all skin and body types.",
+      img: "/laser-hair-reduction.jpg",
+      slug: "laser-hair-reduction",
+      area: "Face, Body, Bikini, Underarms, Legs, Hands",
+      duration: "15-60 minutes depending on area",
+      recovery: "None required",
+      sessions: "6-8 sessions for optimal results.",
+      results: "70-90% permanent hair reduction",
+      idealFor: ["Unwanted facial hair", "Body hair removal", "Ingrown hair prevention", "Back and chest hair"]
+    },
+    {
+      title: "Exosome Therapy",
+      desc: "Next-generation cellular biotechnology delivering potent bioactive growth factors directly to revitalize thinning hair and follicles.",
+      img: "/blog-exosomes.jpg",
+      slug: "exosome-therapy",
+      area: "Scalp",
+      duration: "45-60 minutes",
+      recovery: "Minimal (24 hours)",
+      sessions: "4-5 sessions recommended",
+      results: "Initial improvements with days, peak results.",
+      idealFor: ["Hair thinning", "Excessive hairfall", "Weak hairs", "Baldness"]
+    },
+    {
+      title: "HIFU",
+      desc: "High-Intensity Focused Ultrasound targeting deep SMAS tissue layers to lift, tighten, and contour without surgical intervention.",
+      img: "/treatment_anti_aging_real.jpg",
+      slug: "hifu",
+      area: "Face, Body",
+      duration: "30 to 90 minutes",
+      recovery: "None required",
+      sessions: "1 treatment, optimal touch-ups annually",
+      results: "Peak results at 3-6 months, lasting 18-24 months.",
+      idealFor: ["Mild to moderate skin laxity", "Sagging jowls & jawline", "Body skin tightening"]
+    },
+    {
+      title: "Skin Tag & Wart Removal",
+      desc: "Quick, painless radiofrequency and electro-cautery removal providing immediate clearing with minimal healing time.",
+      img: "/mole-removal.jpg",
+      slug: "skin-tag-wart-removal",
+      area: "Face, Neck, Body, Underarms",
+      duration: "30-45 minutes",
+      recovery: "3-7 days",
+      sessions: "Single session (most cases)",
+      results: "Immediate removal",
+      idealFor: ["Skin tags on face, neck or body", "Common warts", "Flat warts"]
+    },
+    {
+      title: "Dermal Fillers",
+      desc: "Premium cross-linked hyaluronic acid volume restoration to smooth deep smile lines, contour lips, and enhance structural balance.",
+      img: "/botox-treatment.jpg",
+      slug: "dermal-fillers",
+      area: "Face",
+      duration: "30-45 minutes",
+      recovery: "Minimal (24-48 hours)",
+      sessions: "Single session, maintenance every 3-6 months",
+      results: "3-5 days for anti wrinkle injections, immediate for fillers.",
+      idealFor: ["Forehead lines & frown lines", "Loss of facial volume", "Nasolabial folds (smile lines)"]
+    },
+    {
+      title: "Subcision",
+      desc: "Specialized minor surgical technique releasing deep fibrous tethered bands beneath depressed acne scars to elevate the skin contour.",
+      img: "/subcision.jpg",
+      slug: "subcision",
+      area: "Face, primarily acne scarred cheeks",
+      duration: "45-60 minutes.",
+      recovery: "Bruising & swelling may last 2-3 days",
+      sessions: "Usually 1-3 or more, depending on scar severity & response.",
+      results: "Gradual improvement in depressed acne scars over several weeks to months",
+      idealFor: ["Rolling acne scars", "Uneven skin texture", "Atrophic acne scars", "Depressed scars."]
+    },
+    {
+      title: "Mesotherapy for Scalp",
+      desc: "Targeted micro-injections of potent hair vitamins, minerals, and DHT-inhibiting actives directly into follicular roots.",
+      img: "/hair-treatment.jpg",
+      slug: "mesotherapy-scalp",
+      area: "Scalp",
+      duration: "30-45 minutes",
+      recovery: "None to minimal",
+      sessions: "4-6 sessions initially, then maintenance",
+      results: "Reduced hairfall within 2-3 sessions, visible improvement in 3-6 months.",
+      idealFor: ["Early stage hair loss", "Thinning hair", "Dull and lifeless hair", "Stress related hair fall"]
+    },
+    {
+      title: "PRP for Hair",
+      desc: "Autologous Platelet-Rich Plasma therapy harnessing concentrated growth factors to stimulate dormant hair follicles and reverse thinning.",
+      img: "/prp-treatment.jpg",
+      slug: "prp-hair",
+      area: "Scalp",
+      duration: "30-45 minutes",
+      recovery: "Minimal (24 hours)",
+      sessions: "6-9 sessions recommended",
+      results: "Visible improvement in 3-6 months.",
+      idealFor: ["Early stage hair thinning", "Post transplant support", "Hair loss prevention"]
+    },
+    {
+      title: "Tattoo Removal",
+      desc: "High-precision Q-switched laser technology safely fragmenting tattoo pigment particles for progressive fading and clearance.",
+      img: "/tattoo-removal.jpg",
+      slug: "tattoo-removal",
+      area: "Any tattooed area",
+      duration: "30-45 minutes depending on size",
+      recovery: "1-2 weeks per session",
+      sessions: "6-12 sessions typically required",
+      results: "Progressive fading with each session",
+      idealFor: ["Unwanted tattoo", "Faded or aging tattoos", "Tattoo regret"]
+    },
+    {
+      title: "Glutathione IV Drip",
+      desc: "Antioxidant cellular therapy infused via intravenous drip to neutralize free radicals and support optimal metabolic wellness.",
+      img: "/iv-drip.jpg",
+      slug: "glutathione-iv-drip",
+      area: "Intravenous infusion under medical supervision",
+      duration: "Approximately 30-60 minutes.",
+      recovery: "Usually minimal downtime, monitoring is required",
+      sessions: "Individualized following medical assessment",
+      results: "Glutathione is an antioxidant involved in cellular process. Its effectiveness as an IV treatment for skin brightening remains uncertain.",
+      idealFor: ["Antioxidant support", "Cellular wellness", "Fatigue recovery", "Free-radical defense"]
+    },
+    {
+      title: "Carbon Laser",
+      desc: "Charcoal lotion laser peeling providing non-invasive deep pore cleansing, oil reduction, and instant skin radiance.",
+      img: "/hollywood-facial.jpg",
+      slug: "carbon-laser",
+      area: "Face, Underarms, any selected body areas",
+      duration: "20 to 30 minutes",
+      recovery: "Minimal",
+      sessions: "Usually 3-6 sessions, depending on skin concerns.",
+      results: "Smoother, clearer & more radiant skin after treatment.",
+      idealFor: ["Oily skin", "Dull looking skin", "Congested pores", "Uneven skin texture"]
     }
   ];
 
@@ -173,24 +401,189 @@ export default function TreatmentsPage() {
               </h2>
             </div>
 
-            <div className="grid-responsive-3" style={{ gap: '2rem' }}>
+            <div className="grid-responsive-3" style={{ gap: '2rem', alignItems: 'stretch' }}>
               {allTreatments.map((t, index) => (
-                <div key={index} style={{ background: '#FCFAF5', borderRadius: '32px', display: 'flex', flexDirection: 'column', overflow: 'hidden', height: '550px', boxShadow: '0 4px 20px rgba(0,0,0,0.02)' }}>
-                  <div style={{ padding: '3rem 2.5rem', flex: 1 }}>
-                    <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: '1.8rem', color: '#B69359', marginBottom: '1rem', fontWeight: '400' }}>
-                      {t.title}
-                    </h3>
-                    <p style={{ color: 'var(--text-primary)', fontSize: '1rem', lineHeight: '1.6', fontWeight: '400' }}>
-                      {t.desc}
-                    </p>
-                  </div>
-                  <div style={{ position: 'relative', height: '240px', width: '100%' }}>
+                <div key={index} style={{
+                  background: '#FFFFFF',
+                  borderRadius: '28px',
+                  display: 'flex',
+                  flexDirection: 'column',
+                  overflow: 'hidden',
+                  border: '1px solid rgba(28, 46, 37, 0.08)',
+                  boxShadow: '0 8px 30px rgba(0,0,0,0.04)',
+                  transition: 'transform 0.3s ease, box-shadow 0.3s ease'
+                }}>
+                  {/* Card Image */}
+                  <div style={{ position: 'relative', height: '230px', width: '100%', overflow: 'hidden' }}>
                     <Image
                       src={t.img}
                       alt={t.title}
                       fill
-                      style={{ objectFit: 'cover', borderTopLeftRadius: '24px', borderTopRightRadius: '24px' }}
+                      style={{ objectFit: 'cover' }}
                     />
+                    <div style={{
+                      position: 'absolute',
+                      top: '1rem',
+                      left: '1rem',
+                      background: 'rgba(28, 46, 37, 0.85)',
+                      color: 'var(--accent)',
+                      padding: '0.35rem 0.9rem',
+                      borderRadius: '999px',
+                      fontSize: '0.75rem',
+                      fontWeight: '600',
+                      letterSpacing: '0.1em',
+                      textTransform: 'uppercase',
+                      backdropFilter: 'blur(8px)'
+                    }}>
+                      Shrina Clinic
+                    </div>
+                  </div>
+
+                  {/* Card Body */}
+                  <div style={{ padding: '2rem 1.75rem', display: 'flex', flexDirection: 'column', flex: 1 }}>
+                    <h3 style={{
+                      fontFamily: 'var(--font-heading)',
+                      fontSize: '1.75rem',
+                      color: 'var(--primary)',
+                      marginBottom: '0.75rem',
+                      fontWeight: '500',
+                      lineHeight: '1.2'
+                    }}>
+                      {t.title}
+                    </h3>
+                    <p style={{
+                      color: 'var(--text-secondary)',
+                      fontSize: '0.92rem',
+                      lineHeight: '1.6',
+                      marginBottom: '1.5rem',
+                      whiteSpace: 'pre-line'
+                    }}>
+                      {t.desc}
+                    </p>
+
+                    {/* Treatment Overview Box (Ref Image Design) */}
+                    <div style={{
+                      background: '#FAF6EE',
+                      border: '1px solid rgba(182, 147, 89, 0.35)',
+                      borderRadius: '16px',
+                      padding: '1.25rem 1.15rem',
+                      marginTop: 'auto',
+                      marginBottom: '1.5rem'
+                    }}>
+                      <div style={{
+                        color: '#B69359',
+                        fontFamily: 'var(--font-body)',
+                        fontSize: '1rem',
+                        fontWeight: '600',
+                        marginBottom: '1rem'
+                      }}>
+                        Treatment Overview
+                      </div>
+
+                      {/* 2-column key info */}
+                      <div style={{
+                        display: 'grid',
+                        gridTemplateColumns: '1fr 1fr',
+                        gap: '0.85rem 0.5rem',
+                        marginBottom: '0.85rem'
+                      }}>
+                        <div>
+                          <div style={{ fontSize: '0.85rem', fontWeight: '600', color: 'var(--primary)', display: 'flex', alignItems: 'center', gap: '0.35rem' }}>
+                            <span style={{ color: '#B69359' }}>📍</span> Area
+                          </div>
+                          <div style={{ fontSize: '0.82rem', color: '#555', marginTop: '0.15rem' }}>{t.area}</div>
+                        </div>
+
+                        <div>
+                          <div style={{ fontSize: '0.85rem', fontWeight: '600', color: 'var(--primary)', display: 'flex', alignItems: 'center', gap: '0.35rem' }}>
+                            <span style={{ color: '#B69359' }}>⏱️</span> Duration
+                          </div>
+                          <div style={{ fontSize: '0.82rem', color: '#555', marginTop: '0.15rem' }}>{t.duration}</div>
+                        </div>
+
+                        <div>
+                          <div style={{ fontSize: '0.85rem', fontWeight: '600', color: 'var(--primary)', display: 'flex', alignItems: 'center', gap: '0.35rem' }}>
+                            <span style={{ color: '#B69359' }}>🤍</span> Recovery
+                          </div>
+                          <div style={{ fontSize: '0.82rem', color: '#555', marginTop: '0.15rem' }}>{t.recovery}</div>
+                        </div>
+
+                        <div>
+                          <div style={{ fontSize: '0.85rem', fontWeight: '600', color: 'var(--primary)', display: 'flex', alignItems: 'center', gap: '0.35rem' }}>
+                            <span style={{ color: '#B69359' }}>📋</span> Sessions
+                          </div>
+                          <div style={{ fontSize: '0.82rem', color: '#555', marginTop: '0.15rem' }}>{t.sessions}</div>
+                        </div>
+                      </div>
+
+                      {/* Results */}
+                      <div style={{ marginBottom: '0.85rem' }}>
+                        <div style={{ fontSize: '0.85rem', fontWeight: '600', color: 'var(--primary)', display: 'flex', alignItems: 'center', gap: '0.35rem' }}>
+                          <span style={{ color: '#B69359' }}>🛡️</span> Results
+                        </div>
+                        <div style={{ fontSize: '0.82rem', color: '#555', marginTop: '0.15rem', lineHeight: '1.4' }}>
+                          {t.results}
+                        </div>
+                      </div>
+
+                      {/* Divider */}
+                      <hr style={{ border: 'none', borderTop: '1px solid rgba(182, 147, 89, 0.25)', marginBottom: '0.85rem' }} />
+
+                      {/* Ideal For Badges */}
+                      <div>
+                        <div style={{ fontSize: '0.85rem', fontWeight: '600', color: 'var(--primary)', marginBottom: '0.5rem' }}>
+                          Ideal For:
+                        </div>
+                        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.35rem' }}>
+                          {t.idealFor.map((item, idx) => (
+                            <span key={idx} style={{
+                              border: '1px solid #2B3A33',
+                              background: '#FAF6EE',
+                              borderRadius: '6px',
+                              padding: '0.2rem 0.55rem',
+                              fontSize: '0.75rem',
+                              fontWeight: '500',
+                              color: '#1C2E25'
+                            }}>
+                              {item}
+                            </span>
+                          ))}
+                        </div>
+                      </div>
+                    </div>
+
+                    {/* Action buttons */}
+                    <div style={{ display: 'flex', gap: '0.75rem', alignItems: 'center' }}>
+                      <Link href={`/treatments/${t.slug}`} style={{
+                        flex: 1,
+                        textAlign: 'center',
+                        border: '1px solid var(--primary)',
+                        color: 'var(--primary)',
+                        padding: '0.75rem 1rem',
+                        borderRadius: '999px',
+                        textDecoration: 'none',
+                        fontSize: '0.88rem',
+                        fontWeight: '600',
+                        transition: 'all 0.2s'
+                      }}>
+                        View Details
+                      </Link>
+                      <a href="https://wa.me/918979797220" target="_blank" rel="noopener noreferrer" style={{
+                        flex: 1,
+                        textAlign: 'center',
+                        background: 'var(--accent)',
+                        color: 'var(--primary)',
+                        padding: '0.75rem 1rem',
+                        borderRadius: '999px',
+                        textDecoration: 'none',
+                        fontSize: '0.88rem',
+                        fontWeight: '600',
+                        border: 'none',
+                        transition: 'all 0.2s'
+                      }}>
+                        Book
+                      </a>
+                    </div>
                   </div>
                 </div>
               ))}

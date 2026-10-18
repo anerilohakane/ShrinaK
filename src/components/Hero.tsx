@@ -8,7 +8,7 @@ import { motion, AnimatePresence } from "framer-motion";
 const slides = [
   {
     id: 1,
-    image: "/shrina-clinic-lounge.jpg",
+    image: "/clinic-lounge-sofa.jpg",
     alt: "Shrina Korean Aesthetic Clinic Lounge",
   },
   {

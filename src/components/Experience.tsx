@@ -44,8 +44,8 @@ export default function Experience() {
             border: '8px solid var(--surface-alt)'
           }}>
             <Image 
-              src="/shrina-clinic-lounge.jpg"
-              alt="Shrina Korean Aesthetic Clinic Interior"
+              src="/clinic-lounge-sofa.jpg"
+              alt="Shrina Korean Aesthetic Clinic Consultation Lounge"
               fill
               style={{ objectFit: 'cover' }}
             />
