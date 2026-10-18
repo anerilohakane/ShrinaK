@@ -89,64 +89,33 @@ export default function TeamPage() {
       <main style={{ minHeight: '100vh', background: '#FCFAF5' }}>
 
         {/* Hero Section with Team Photo Background */}
-        <div style={{
-          position: 'relative',
-          width: '100%',
-          minHeight: '700px',
-          height: '80vh',
-          display: 'flex',
-          alignItems: 'flex-start',
-          justifyContent: 'center',
-          paddingTop: '8rem',
-          backgroundImage: 'url("/team-hero.jpg")',
-          backgroundSize: 'cover',
-          backgroundPosition: 'center 2%',
-          backgroundRepeat: 'no-repeat',
-          borderRadius: '0 0 40px 40px',
-          overflow: 'hidden',
-          boxShadow: '0 15px 40px rgba(28, 46, 37, 0.08)'
-        }}>
-          {/* Subtle Top & Bottom Gradient Overlay for optimal legibility while keeping all faces crisp */}
+        <div className="team-hero-banner">
+          {/* Multi-tier Gradient: dark top for header readability, crystal clear middle for faces, and smooth dark bottom for text contrast */}
           <div style={{
             position: 'absolute',
             inset: 0,
-            background: 'linear-gradient(to bottom, rgba(28, 46, 37, 0.75) 0%, rgba(28, 46, 37, 0.25) 28%, rgba(28, 46, 37, 0.0) 55%, rgba(28, 46, 37, 0.6) 100%)',
+            background: 'linear-gradient(to bottom, rgba(28, 46, 37, 0.65) 0%, rgba(28, 46, 37, 0.15) 18%, rgba(28, 46, 37, 0.0) 45%, rgba(28, 46, 37, 0.45) 75%, rgba(28, 46, 37, 0.85) 100%)',
             pointerEvents: 'none'
           }}></div>
 
-          {/* Hero Content without container box */}
+          {/* Hero Content anchored cleanly at the bottom of the banner */}
           <div style={{
             position: 'relative',
             zIndex: 1,
             textAlign: 'center',
             color: '#fff',
+            width: '100%',
             maxWidth: '800px',
             padding: '0.5rem 1rem',
             margin: '0 auto'
           }}>
-            <span style={{
-              display: 'inline-block',
-              fontSize: '0.75rem',
-              fontWeight: '600',
-              color: 'var(--accent)',
-              letterSpacing: '0.25em',
-              textTransform: 'uppercase',
-              marginBottom: '0.6rem',
-              border: '1px solid var(--accent)',
-              padding: '0.25rem 0.9rem',
-              borderRadius: '9999px',
-              background: 'rgba(28, 46, 37, 0.35)',
-              backdropFilter: 'blur(4px)',
-              WebkitBackdropFilter: 'blur(4px)',
-              textShadow: '0 2px 8px rgba(0,0,0,0.4)'
-            }}>OUR SPECIALISTS</span>
             <h1 style={{
               fontFamily: 'var(--font-heading)',
-              fontSize: 'clamp(2.6rem, 5vw, 4.2rem)',
+              fontSize: 'clamp(2.1rem, 4.5vw, 3.6rem)',
               fontWeight: '400',
-              marginBottom: '0.6rem',
+              marginBottom: '0.4rem',
               letterSpacing: '0.02em',
-              textShadow: '0 4px 24px rgba(0,0,0,0.6), 0 2px 8px rgba(0,0,0,0.8)',
+              textShadow: '0 4px 20px rgba(0,0,0,0.85), 0 2px 6px rgba(0,0,0,0.95)',
               color: '#fff',
               lineHeight: '1.1'
             }}>Meet Our Team</h1>
@@ -154,10 +123,10 @@ export default function TeamPage() {
               display: 'flex', 
               gap: '0.5rem', 
               justifyContent: 'center', 
-              fontSize: '0.9rem', 
+              fontSize: 'clamp(0.8rem, 2vw, 0.9rem)', 
               fontWeight: '500', 
               letterSpacing: '0.05em',
-              textShadow: '0 2px 8px rgba(0,0,0,0.7)'
+              textShadow: '0 2px 8px rgba(0,0,0,0.9)'
             }}>
               <Link href="/" style={{ color: '#fff', textDecoration: 'none', opacity: 0.95 }}>Home</Link>
               <span style={{ opacity: 0.8 }}>&gt;</span>

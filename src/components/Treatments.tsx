@@ -160,21 +160,24 @@ export default function Treatments() {
           <div className="grid-responsive-3" style={{ gap: '2rem' }}>
 
             {/* Card 1 */}
-            <div style={{ background: '#FCFAF5', borderRadius: '32px', display: 'flex', flexDirection: 'column', overflow: 'hidden', height: '600px', boxShadow: '0 4px 20px rgba(0,0,0,0.02)' }}>
-              <div style={{ padding: '3rem 2.5rem', flex: 1 }}>
-                <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: '2rem', color: '#B69359', marginBottom: '1.5rem', fontWeight: '400' }}>
+            <div style={{ background: '#FCFAF5', borderRadius: '32px', display: 'flex', flexDirection: 'column', overflow: 'hidden', height: '640px', boxShadow: '0 4px 20px rgba(0,0,0,0.02)' }}>
+              <div style={{ padding: '2.2rem 2rem', flex: 1, display: 'flex', flexDirection: 'column', justifyContent: 'flex-start' }}>
+                <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: '2rem', color: '#B69359', marginBottom: '1.2rem', fontWeight: '400' }}>
                   Consultation
                 </h3>
-                <p style={{ color: 'var(--text-primary)', fontSize: '1.05rem', lineHeight: '1.6', fontWeight: '400' }}>
-                  Our skincare consultation identifies your skin type, concerns, and goals to create a personalized skincare plan for you.
+                <p style={{ color: 'var(--text-primary)', fontSize: '0.94rem', lineHeight: '1.55', fontWeight: '400', marginBottom: '0.8rem' }}>
+                  Discover a personalised approach to your skin and hair goals. Our expert consultations include a detailed assessment, professional guidance, and customised treatment recommendations tailored to your unique needs.
+                </p>
+                <p style={{ color: '#B69359', fontSize: '0.9rem', fontStyle: 'italic', fontWeight: '500', margin: 0 }}>
+                  “Where science meets the art of aesthetics.”
                 </p>
               </div>
-              <div style={{ position: 'relative', height: '250px', width: '100%' }}>
+              <div style={{ position: 'relative', height: '270px', width: '100%' }}>
                 <Image
                   src="/consultation-service.jpg"
                   alt="Consultation"
                   fill
-                  style={{ objectFit: 'cover', objectPosition: 'center 85%', borderTopLeftRadius: '24px', borderTopRightRadius: '24px' }}
+                  style={{ objectFit: 'cover', objectPosition: 'center 45%', borderTopLeftRadius: '24px', borderTopRightRadius: '24px' }}
                 />
               </div>
             </div>

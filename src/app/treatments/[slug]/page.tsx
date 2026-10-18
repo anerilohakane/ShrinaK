@@ -13,6 +13,10 @@ export default async function TreatmentDetailPage({ params }: { params: { slug: 
 
   if (slug.includes('hydra')) {
     imageUrl = "/hydra-facial.jpg"; // User uploaded Hydra Facial image
+  } else if (slug.includes('booster')) {
+    imageUrl = "/skin-booster.jpg"; // User uploaded Skin Booster image
+  } else if (slug.includes('botox')) {
+    imageUrl = "/botox-treatment.jpg"; // User uploaded Botox treatment image
   } else if (slug.includes('hollywood')) {
     imageUrl = "/hollywood-facial.jpg"; // User uploaded Hollywood Facial image
   } else if (slug.includes('scar')) {

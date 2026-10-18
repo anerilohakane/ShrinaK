@@ -350,3 +350,95 @@ section {
 .delay-100 { animation-delay: 100ms; }
 .delay-200 { animation-delay: 200ms; }
 .delay-300 { animation-delay: 300ms; }
+
+/* Team Hero Banner Responsive Layout */
+.team-hero-banner {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-image: url("/team-hero.jpg");
+  background-repeat: no-repeat;
+  border-radius: 0 0 36px 36px;
+  overflow: hidden;
+  box-shadow: 0 15px 40px rgba(28, 46, 37, 0.08);
+}
+
+/* Desktop */
+@media (min-width: 992px) {
+  .team-hero-banner {
+    height: 86vh;
+    min-height: 720px;
+    background-size: cover;
+    background-position: center 0%;
+    padding-bottom: 0.75rem;
+  }
+}
+
+/* Tablet */
+@media (min-width: 577px) and (max-width: 991px) {
+  .team-hero-banner {
+    height: 76vh;
+    min-height: 560px;
+    background-size: cover;
+    background-position: center 2%;
+    padding-bottom: 0.5rem;
+  }
+}
+
+/* Mobile Phone */
+@media (max-width: 576px) {
+  .team-hero-banner {
+    min-height: 500px;
+    height: 70vh;
+    background-size: cover;
+    background-position: center 2%;
+    padding-bottom: 0.4rem;
+    border-radius: 0 0 24px 24px;
+  }
+}
+/* Blog Hero Banner Responsive Layout */
+.blog-hero-banner {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+}
+
+@media (min-width: 992px) {
+  .blog-hero-banner {
+    height: 65vh;
+    min-height: 540px;
+    padding-bottom: 2.5rem;
+  }
+  .blog-hero-img {
+    object-position: center 55% !important;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 991px) {
+  .blog-hero-banner {
+    height: 58vh;
+    min-height: 480px;
+    padding-bottom: 2rem;
+  }
+  .blog-hero-img {
+    object-position: center 50% !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .blog-hero-banner {
+    height: 52vh;
+    min-height: 420px;
+    padding-bottom: 1.5rem;
+  }
+  .blog-hero-img {
+    object-position: center 48% !important;
+  }
+}

@@ -20,7 +20,7 @@ export default function BlogPage() {
       excerpt: "Move over PRP. Exosome therapy is revolutionizing cellular regeneration and anti-aging treatments. Here's why you need to book a consultation today.",
       date: "September 02, 2026",
       category: "Treatments",
-      image: "/treatment_anti_aging_real.jpg",
+      image: "/blog-exosomes.jpg",
       slug: "exosomes-future-of-anti-aging"
     },
     {
@@ -47,7 +47,7 @@ export default function BlogPage() {
       excerpt: "Will it freeze my face? Is it permanent? Our lead specialists debunk the most common misconceptions about premium Botox and wrinkle relaxers.",
       date: "July 28, 2026",
       category: "Aesthetics",
-      image: "https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?auto=format&fit=crop&q=80&w=800",
+      image: "/botox-treatment.jpg",
       slug: "debunking-botox-myths"
     },
     {
@@ -67,27 +67,16 @@ export default function BlogPage() {
       <main style={{ minHeight: '100vh', background: '#FFFDF9' }}>
 
         {/* Ultra-Premium Blog Hero Banner */}
-        <div style={{
-          position: 'relative',
-          width: '100%',
-          height: '50vh',
-          minHeight: '450px',
-          display: 'flex',
-          flexDirection: 'column',
-          justifyContent: 'center',
-          alignItems: 'center',
-          textAlign: 'center',
-          paddingTop: '6rem',
-          overflow: 'hidden'
-        }}>
+        <div className="blog-hero-banner">
           {/* Background Image with subtle zoom */}
           <div style={{ position: 'absolute', inset: 0, zIndex: 0, animation: 'subtleZoom 20s infinite alternate' }}>
             <img
-              src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&q=80&w=2500"
+              src="/consultation-service.jpg"
               alt="Luxury Beauty Blog"
-              style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center 40%' }}
+              className="blog-hero-img"
+              style={{ width: '100%', height: '100%', objectFit: 'cover' }}
             />
-            <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to bottom, rgba(28, 46, 37, 0.5) 0%, rgba(28, 46, 37, 0.9) 100%)' }}></div>
+            <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to bottom, rgba(28, 46, 37, 0.25) 0%, rgba(28, 46, 37, 0.4) 40%, rgba(28, 46, 37, 0.88) 100%)' }}></div>
           </div>
 
           {/* Content */}

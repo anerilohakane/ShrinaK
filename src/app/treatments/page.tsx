@@ -8,20 +8,14 @@ export default function TreatmentsPage() {
   const allTreatments = [
     {
       title: "Consultation",
-      desc: "Our skincare consultation identifies your skin type, concerns, and goals to create a personalized skincare plan for you.",
-      img: "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&q=80&w=800",
+      desc: "Discover a personalised approach to your skin and hair goals. Our expert consultations include a detailed assessment, professional guidance, and customised treatment recommendations tailored to your unique needs.\n\n“Where science meets the art of aesthetics.”",
+      img: "/consultation-service.jpg",
       slug: "consultation"
-    },
-    {
-      title: "Korean Cell therapy",
-      desc: "Korean Cell Therapy helps rejuvenate the skin, promoting a smoother, firmer, and more youthful-looking appearance.",
-      img: "https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?auto=format&fit=crop&q=80&w=800",
-      slug: "korean-cell-therapy"
     },
     {
       title: "Skin Boosters",
       desc: "Deeply hydrate and revitalize your skin from within using premium micro-injections of hyaluronic acid and nutrients.",
-      img: "https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?auto=format&fit=crop&q=80&w=800",
+      img: "/skin-booster.jpg",
       slug: "skin-boosters"
     },
     {
@@ -51,7 +45,7 @@ export default function TreatmentsPage() {
     {
       title: "Premium Botox",
       desc: "Expertly administered wrinkle relaxers for natural-looking expression smoothing and facial contouring.",
-      img: "/treatment_anti_aging_real.jpg",
+      img: "/botox-treatment.jpg",
       slug: "premium-botox"
     },
     {

@@ -23,8 +23,8 @@ const blogPosts = [
     excerpt: "Move over PRP. Exosome therapy is revolutionizing cellular regeneration and anti-aging treatments. Here's why you need to book a consultation today.",
     date: "September 02, 2026",
     category: "Treatments",
-    image: "/treatment_anti_aging_real.jpg",
-    fullImage: "/treatment_anti_aging_real.jpg",
+    image: "/blog-exosomes.jpg",
+    fullImage: "/blog-exosomes.jpg",
     slug: "exosomes-future-of-anti-aging",
     content: "Exosomes are the tiny messengers of your cells. Unlike traditional PRP which relies on your body's current stem cell health, exosome therapy delivers young, potent growth factors directly to where your skin needs them most. This results in significantly faster healing, superior collagen production, and a dramatic reduction in fine lines and pigmentation. It's the ultimate bio-hacking treatment for your skin, pushing the boundaries of what aesthetic medicine can achieve."
   },
@@ -56,8 +56,8 @@ const blogPosts = [
     excerpt: "Will it freeze my face? Is it permanent? Our lead specialists debunk the most common misconceptions about premium Botox and wrinkle relaxers.",
     date: "July 28, 2026",
     category: "Aesthetics",
-    image: "https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?auto=format&fit=crop&q=80&w=800",
-    fullImage: "https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?auto=format&fit=crop&q=80&w=2000",
+    image: "/botox-treatment.jpg",
+    fullImage: "/botox-treatment.jpg",
     slug: "debunking-botox-myths",
     content: "The biggest myth about Botox is that it will leave you emotionless. In the hands of a skilled practitioner at Shrina, wrinkle relaxers are used strategically to soften lines while preserving your natural expressions. It is not permanent; results typically last 3 to 6 months. Furthermore, Botox isn't just for anti-aging; it's increasingly used preventatively by younger clients to stop deep lines from forming in the first place. It's a subtle, elegant enhancement, not a mask."
   },
