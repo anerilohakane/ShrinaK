@@ -221,13 +221,6 @@ export default function BlogPage() {
                 </article>
               ))}
             </div>
-
-            {/* Pagination Placeholder */}
-            <div style={{ display: 'flex', justifyContent: 'center', marginTop: '5rem', gap: '0.5rem' }}>
-              <button style={{ width: '40px', height: '40px', borderRadius: '50%', background: 'var(--primary)', color: '#fff', border: 'none', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: '600', cursor: 'pointer' }}>1</button>
-              <button style={{ width: '40px', height: '40px', borderRadius: '50%', background: 'transparent', color: 'var(--primary)', border: '1px solid #EBE4D5', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: '600', cursor: 'pointer' }}>2</button>
-              <button style={{ width: '40px', height: '40px', borderRadius: '50%', background: 'transparent', color: 'var(--primary)', border: '1px solid #EBE4D5', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: '600', cursor: 'pointer' }}>3</button>
-            </div>
           </div>
         </section>
 
