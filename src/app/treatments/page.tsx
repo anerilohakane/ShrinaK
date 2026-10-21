@@ -44,7 +44,7 @@ export default function TreatmentsPage() {
     },
     {
       title: "CO2 Fractional Laser",
-      desc: "Advanced fractional laser technology for deep collagen remodeling, acne scar resurfacing, and total skin renewal.",
+      desc: "Fractional laser treatment is a skin-resurfacing procedure that targets microscopic areas of the skin to stimulate collagen production and support skin renewal.",
       img: "/co2-fractional-laser.jpg",
       slug: "co2-fractional-laser",
       area: "Face & Neck",
@@ -92,7 +92,7 @@ export default function TreatmentsPage() {
     },
     {
       title: "MNRF (Microneedling Radiofrequency)",
-      desc: "Advanced radiofrequency microneedling to stimulate deep collagen remodeling, tighten skin, and minimize stubborn acne scars.",
+      desc: "MNRF (Microneedling Radiofrequency) is an advanced skin rejuvenation procedure that stimulates collagen and elastin production. It helps improve acne scars, enlarged pores, fine lines and uneven skin texture.",
       img: "/mnrf.jpg",
       slug: "mnrf",
       area: "Face",
@@ -104,7 +104,7 @@ export default function TreatmentsPage() {
     },
     {
       title: "Face Microneedling",
-      desc: "Stimulate natural collagen and elastin induction for scar revision, fine line reduction, and deep cellular renewal.",
+      desc: "Microneedling is a minimally invasive procedure that uses fine, sterile needles to create controlled micro-injuries in the skin. This stimulates the skin's natural wound-healing response and collagen remodelling.",
       img: "/microneedling.jpg",
       slug: "face-microneedling",
       area: "Face, Lips",
@@ -116,7 +116,7 @@ export default function TreatmentsPage() {
     },
     {
       title: "PRP for Face",
-      desc: "Harness your body's own concentrated growth factors to deeply revitalize skin elasticity, repair fine lines, and brighten under-eyes.",
+      desc: "Platelet-Rich Plasma (PRP) is a regenerative treatment that uses a concentrated portion of the patient's own blood platelets to support skin repair and improve selected signs of skin ageing.",
       img: "/face-prp.jpg",
       slug: "face-prp",
       area: "Face",
@@ -128,7 +128,7 @@ export default function TreatmentsPage() {
     },
     {
       title: "Chemical Peels",
-      desc: "Medical-grade exfoliating peels designed to strip away sun-damaged layers, diminish melasma, and reveal velvety-soft skin.",
+      desc: "A chemical peel uses carefully selected exfoliating agents to promote the shedding of dead skin cells and support skin renewal. The type and strength of the peel are selected according to the patient's skin type and concerns.",
       img: "/chemical-peel.jpg",
       slug: "chemical-peels",
       area: "Face, Neck, Hands, Legs, Back",
@@ -140,7 +140,7 @@ export default function TreatmentsPage() {
     },
     {
       title: "Hydra Facial",
-      desc: "Multi-step medical hydra-dermabrasion that vacuums out impurities, extracts blackheads, and infuses restorative antioxidant serums.",
+      desc: "Hydra Facial is a non-invasive skin treatment that combines cleansing, exfoliation, gentle extraction and hydration to improve the appearance of the skin.",
       img: "/hydra-facial.jpg",
       slug: "hydra-facial",
       area: "Face",
@@ -152,7 +152,7 @@ export default function TreatmentsPage() {
     },
     {
       title: "Laser Hair Reduction",
-      desc: "State-of-the-art diode laser technology for painless, long-lasting hair reduction across all skin and body types.",
+      desc: "Laser Hair Reduction uses concentrated light energy to target hair follicles and reduce unwanted hair growth across the face, arms, legs, underarms and body areas.",
       img: "/laser-hair-reduction.jpg",
       slug: "laser-hair-reduction",
       area: "Face, Body, Bikini, Underarms, Legs, Hands",
@@ -164,7 +164,7 @@ export default function TreatmentsPage() {
     },
     {
       title: "Hair Exosomes",
-      desc: "Next-generation cellular biotechnology delivering potent bioactive growth factors directly to revitalize thinning hair and follicles.",
+      desc: "Exosomes are extracellular vesicles involved in cell-to-cell communication. Exosome-based hair treatments support the scalp environment and active follicular health.",
       img: "/hair-exosomes.jpg",
       slug: "hair-exosomes",
       area: "Scalp",
@@ -188,7 +188,7 @@ export default function TreatmentsPage() {
     },
     {
       title: "Skin Tag & Wart Removal",
-      desc: "Quick, painless radiofrequency and electro-cautery removal providing immediate clearing with minimal healing time.",
+      desc: "Mole and lesion removal is a medical procedure performed to remove selected skin lesions for cosmetic or clinical reasons.",
       img: "/mole-removal.jpg",
       slug: "skin-tag-wart-removal",
       area: "Face, Neck, Body, Underarms",
@@ -212,7 +212,7 @@ export default function TreatmentsPage() {
     },
     {
       title: "Subcision",
-      desc: "Specialized minor surgical technique releasing deep fibrous tethered bands beneath depressed acne scars to elevate the skin contour.",
+      desc: "Subcision is a minor, minimally invasive procedure used to treat selected depressed acne scars by releasing tethered fibrous bands.",
       img: "/subcision.jpg",
       slug: "subcision",
       area: "Face, primarily acne scarred cheeks",
@@ -224,7 +224,7 @@ export default function TreatmentsPage() {
     },
     {
       title: "Mesotherapy for Scalp",
-      desc: "Targeted micro-injections of potent hair vitamins, minerals, and DHT-inhibiting actives directly into follicular roots.",
+      desc: "Hair mesotherapy involves delivering selected active substances into the scalp through small micro-injections according to clinical indications.",
       img: "/hair-treatment.jpg",
       slug: "mesotherapy-scalp",
       area: "Scalp",
@@ -236,7 +236,7 @@ export default function TreatmentsPage() {
     },
     {
       title: "PRP for Hair",
-      desc: "Autologous Platelet-Rich Plasma therapy harnessing concentrated growth factors to stimulate dormant hair follicles and reverse thinning.",
+      desc: "PRP therapy uses a platelet-rich preparation from the patient's own blood containing growth factors that help support hair follicle activity.",
       img: "/prp-treatment.jpg",
       slug: "prp-hair",
       area: "Scalp",
@@ -260,7 +260,7 @@ export default function TreatmentsPage() {
     },
     {
       title: "Korean Scalp Treatment",
-      desc: "Holistic Korean scalp spa therapy utilizing high-frequency glass ozone stimulation, botanical exfoliating scrubs, and deep nutrient infusion.",
+      desc: "Korean scalp treatments focus on scalp cleansing, hydration, gentle exfoliation, and cosmetic scalp care.",
       img: "/korean-scalp.jpg",
       slug: "korean-scalp-treatment",
       area: "Scalp & Neck",
@@ -272,7 +272,7 @@ export default function TreatmentsPage() {
     },
     {
       title: "Hair Microneedling",
-      desc: "Targeted scalp microneedling to stimulate dormant hair follicles, enhance topical absorption, and boost local microcirculation.",
+      desc: "Hair microneedling uses a specialized device to create controlled microchannels in the scalp as an adjunctive therapy for hair loss.",
       img: "/hair-microneedling.jpg",
       slug: "hair-microneedling",
       area: "Scalp and areas affected by hair thinning",
@@ -284,7 +284,7 @@ export default function TreatmentsPage() {
     },
     {
       title: "Tattoo Removal",
-      desc: "High-precision Q-switched laser technology safely fragmenting tattoo pigment particles for progressive fading and clearance.",
+      desc: "Laser tattoo removal uses targeted laser energy to break down tattoo ink particles, allowing the body's natural processes to gradually clear them.",
       img: "/tattoo-removal.jpg",
       slug: "tattoo-removal",
       area: "Any tattooed area",

@@ -65,6 +65,57 @@ export default async function TreatmentDetailPage({ params }: { params: { slug: 
     imageUrl = "/treatment_anti_aging_real.jpg"; // User requested image for makeup treatments
   }
 
+  // Custom treatment clinical descriptions
+  let description = `This is a detailed description for ${title}. Experience the pinnacle of our ${title.toLowerCase()} specifically tailored to rejuvenate and restore your natural beauty with precision clinical protocols.`;
+
+  if (slug.includes('mnrf')) {
+    description = "MNRF (Microneedling Radiofrequency) is an advanced skin rejuvenation procedure that stimulates collagen and elastin production. It helps improve acne scars, enlarged pores, fine lines and uneven skin texture.";
+  } else if (slug.includes('hair-reduction') || slug.includes('laser-hair') || slug === 'lhr-treatment' || slug.includes('lhr')) {
+    description = "Laser Hair Reduction uses concentrated light energy to target hair follicles and reduce unwanted hair growth. It can be performed on the face, arms, legs, underarms and other body areas. Multiple sessions are required to achieve progressive hair reduction.";
+  } else if (slug.includes('mummy')) {
+    description = "The Mummy Mask Facial is a skincare treatment designed to hydrate, soothe and refresh the skin. A specialised modelling mask is applied after cleansing and preparing the skin. Depending on its formulation, it may help improve skin softness, hydration and temporary dullness.";
+  } else if (slug.includes('fat-loss') || (slug.includes('fat') && slug.includes('loss'))) {
+    description = "Fat Loss IV Drips are marketed as wellness infusions containing ingredients such as vitamins, minerals or amino acids. Effective weight management focuses on balanced nutrition, physical activity and personalised medical guidance. A professional consultation helps identify appropriate weight-management options.";
+  } else if (slug.includes('mole')) {
+    description = "Mole removal is a medical procedure performed to remove selected skin lesions for cosmetic or clinical reasons. The appropriate technique depends on the mole's size, depth, location and clinical appearance.";
+  } else if (slug.includes('korean-peel')) {
+    description = "Korean Peel Treatment is a professional skin-renewal procedure designed to improve skin texture and radiance. Depending on the formulation, it may help address dullness, uneven skin tone and selected pigmentation concerns. The treatment involves applying a suitable exfoliating formulation according to the skin's needs.";
+  } else if (slug.includes('exosome')) {
+    description = "Exosomes are extracellular vesicles involved in cell-to-cell communication. Exosome-based hair treatments are being investigated for their potential role in supporting the scalp and hair.";
+  } else if (slug.includes('meso')) {
+    description = "Hair mesotherapy involves delivering selected substances into the scalp through small injections. The ingredients may vary according to the treatment protocol and clinical indication.";
+  } else if (slug.includes('korean-scalp') || (slug.includes('scalp') && slug.includes('korean'))) {
+    description = "Korean scalp treatments focus on scalp cleansing, hydration, and cosmetic scalp care. Depending on the protocol, treatment may include scalp analysis, cleansing, gentle exfoliation, and conditioning.";
+  } else if ((slug.includes('hair') && slug.includes('microneedling')) || slug === 'hair-microneedling') {
+    description = "Hair microneedling uses a specialized device to create controlled microchannels in the scalp. It is being used and studied as an adjunctive treatment for selected forms of hair loss.";
+  } else if ((slug.includes('prp') && !slug.includes('face')) || slug.includes('hair-prp') || slug.includes('biotin')) {
+    description = "PRP therapy uses a platelet-rich preparation obtained from the patient's own blood. Platelets contain growth factors that may help support hair follicle activity and improve hair thickness and density.";
+  } else if (slug.includes('microblading') || slug.includes('brow')) {
+    description = "Microblading is a semi-permanent cosmetic brow technique in which fine, hair-like strokes are created using a specialized manual tool and pigment to enhance the appearance of the eyebrows.";
+  } else if (slug.includes('lip')) {
+    description = "Lip tinting is a semi-permanent cosmetic pigmentation procedure designed to enhance the natural appearance of the lips by adding subtle colour and definition.";
+  } else if (slug.includes('glow')) {
+    description = "BB Glow is a cosmetic skin treatment that typically combines microneedling or a similar skin-delivery technique with tinted serums or pigment-containing products to create the appearance of a more even complexion.";
+  } else if (slug.includes('hydra')) {
+    description = "Hydra Facial is a non-invasive skin treatment that combines cleansing, exfoliation, gentle extraction and hydration to improve the appearance of the skin. It helps remove impurities, replenish moisture and enhance the skin's natural radiance.";
+  } else if (slug.includes('carbon')) {
+    description = "Carbon Laser Treatment, also known as a carbon laser peel, uses a carbon-based lotion followed by laser application to help improve skin clarity and texture. It may help reduce excess surface oil and the appearance of enlarged pores.";
+  } else if (slug.includes('peel')) {
+    description = "A chemical peel uses carefully selected exfoliating agents to promote the shedding of dead skin cells and support skin renewal. The type and strength of the peel are selected according to the patient's skin type and concerns.";
+  } else if (slug.includes('face-prp') || (slug.includes('prp') && slug.includes('face'))) {
+    description = "Platelet-Rich Plasma (PRP) is a regenerative treatment that uses a concentrated portion of the patient's own blood platelets. After processing, the PRP is applied or administered using an appropriate technique to support skin repair and improve selected signs of skin ageing.";
+  } else if (slug.includes('microneedling')) {
+    description = "Microneedling is a minimally invasive procedure that uses fine, sterile needles to create controlled micro-injuries in the skin. This stimulates the skin's natural wound-healing response and collagen remodelling.";
+  } else if (slug.includes('subcis') || slug.includes('subscious')) {
+    description = "Subcision is a minor, minimally invasive procedure used to treat selected depressed acne scars. A specialised needle or cannula is introduced beneath the scar to release fibrous bands that pull the skin downward, helping the scar appear less indented.";
+  } else if (slug.includes('fractional') || slug.includes('co2')) {
+    description = "Fractional laser treatment is a skin-resurfacing procedure that targets microscopic areas of the skin to stimulate collagen production and support skin renewal.";
+  } else if (slug.includes('scar')) {
+    description = "Scar treatment aims to improve the appearance, texture and visibility of scars through personalised procedures selected according to the scar type, depth and skin condition.";
+  } else if (slug.includes('tattoo')) {
+    description = "Laser tattoo removal uses targeted laser energy to break down tattoo ink particles, allowing the body's natural processes to gradually clear them over time.";
+  }
+
   // Dynamic Treatment Overview Data mapping (including user handwritten protocols)
   let overview = {
     area: 'Face & Neck',
@@ -383,11 +434,11 @@ export default async function TreatmentDetailPage({ params }: { params: { slug: 
               
               <p style={{
                 color: 'var(--text-secondary)',
-                fontSize: '0.98rem',
-                lineHeight: '1.7',
+                fontSize: '1rem',
+                lineHeight: '1.75',
                 marginBottom: '1.75rem'
               }}>
-                This is a detailed description for {title}. Experience the pinnacle of our {title.toLowerCase()} specifically tailored to rejuvenate and restore your natural beauty with precision clinical protocols.
+                {description}
               </p>
 
               {/* Treatment Overview Card (as shown in reference image) */}
