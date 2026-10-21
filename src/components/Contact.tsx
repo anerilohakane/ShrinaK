@@ -54,7 +54,10 @@ export default function Contact() {
               <div style={{ fontSize: '1.2rem', color: 'var(--primary)' }}>📞</div>
               <div>
                 <span style={{ display: 'block', fontSize: '0.8rem', fontWeight: '600', color: 'var(--text-primary)', marginBottom: '0.25rem', textTransform: 'uppercase' }}>Call & WhatsApp</span>
-                <span style={{ fontSize: '0.85rem', color: 'var(--text-secondary)' }}>+91 89797 97220</span>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '0.2rem' }}>
+                  <a href="tel:+918979797220" style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', textDecoration: 'none' }}>+91 89797 97220</a>
+                  <a href="tel:+918411900922" style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', textDecoration: 'none' }}>+91 84119 00922</a>
+                </div>
               </div>
             </li>
             <li style={{ display: 'flex', gap: '1rem' }}>

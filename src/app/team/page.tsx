@@ -65,7 +65,7 @@ export default function TeamPage() {
     {
       name: "Dr. Vyankatesh Kalyankar",
       title: "PCOS & Hormonal Health Consultant",
-      image: "",
+      image: "/dr-vyankatesh.jpg",
       bio: [
         "Dr. Vyankatesh Kalyankar specialises in the comprehensive management of PCOS and hormonal health, with a personalised and patient-centred approach. His focus is on understanding each patient’s individual concerns and providing tailored guidance for long-term hormonal and reproductive wellbeing.",
         "With an emphasis on evidence-based care, personalised treatment plans, and compassionate consultation, Dr. Kalyankar helps patients navigate PCOS with confidence and clarity."

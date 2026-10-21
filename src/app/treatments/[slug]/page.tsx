@@ -19,6 +19,8 @@ export default async function TreatmentDetailPage({ params }: { params: { slug: 
     imageUrl = "/botox-treatment.jpg"; // User uploaded Botox treatment image
   } else if (slug.includes('hollywood')) {
     imageUrl = "/hollywood-facial.jpg"; // User uploaded Hollywood Facial image
+  } else if (slug.includes('peel')) {
+    imageUrl = "/chemical-peel.jpg"; // User uploaded Chemical Peel image
   } else if (slug.includes('scar')) {
     imageUrl = "/scar-removal.jpg"; // User uploaded Scar Removal image
   } else if (slug.includes('mole')) {
@@ -33,6 +35,8 @@ export default async function TreatmentDetailPage({ params }: { params: { slug: 
     imageUrl = "/face-prp.jpg"; // User uploaded Face PRP image
   } else if (slug.includes('exosome')) {
     imageUrl = "/exosomes.jpg"; // User uploaded Exosomes treatment image
+  } else if (slug.includes('biotin')) {
+    imageUrl = "/prp-biotin.jpg"; // User uploaded PRP + Biotin image
   } else if (slug.includes('prp')) {
     imageUrl = "/prp-treatment.jpg"; // User uploaded PRP treatment image
   } else if (slug.includes('scalp')) {

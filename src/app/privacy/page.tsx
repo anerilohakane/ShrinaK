@@ -53,7 +53,7 @@ export default function PrivacyPolicy() {
             <div>
               <h2 style={{ fontFamily: 'var(--font-heading)', fontSize: '2rem', color: 'var(--primary)', marginBottom: '1rem', fontWeight: '400' }}>1. Who We Are</h2>
               <p style={{ marginBottom: '1rem' }}>Shrina Korean Aesthetic Clinic is a premium aesthetic clinic with locations in Kothrud and Viman Nagar, Pune, Maharashtra.</p>
-              <p style={{ marginBottom: '0.2rem' }}><strong>Contact:</strong> +91 89797 97220</p>
+              <p style={{ marginBottom: '0.2rem' }}><strong>Contact:</strong> +91 89797 97220 / +91 84119 00922</p>
               <p style={{ marginBottom: '1rem' }}><strong>Email:</strong> <a href="mailto:shrinakbeauty1999@gmail.com" style={{ color: 'var(--primary)', textDecoration: 'none' }}>shrinakbeauty1999@gmail.com</a></p>
               <p>For privacy questions.</p>
             </div>

@@ -129,7 +129,7 @@ export default function TreatmentsPage() {
     {
       title: "Chemical Peels",
       desc: "Medical-grade exfoliating peels designed to strip away sun-damaged layers, diminish melasma, and reveal velvety-soft skin.",
-      img: "/treatment_anti_aging_real.jpg",
+      img: "/chemical-peel.jpg",
       slug: "chemical-peels",
       area: "Face, Neck, Hands, Legs, Back",
       duration: "25-30 minutes",
@@ -163,10 +163,10 @@ export default function TreatmentsPage() {
       idealFor: ["Unwanted facial hair", "Body hair removal", "Ingrown hair prevention", "Back and chest hair"]
     },
     {
-      title: "Exosome Therapy",
+      title: "Hair Exosomes",
       desc: "Next-generation cellular biotechnology delivering potent bioactive growth factors directly to revitalize thinning hair and follicles.",
-      img: "/blog-exosomes.jpg",
-      slug: "exosome-therapy",
+      img: "/hair-exosomes.jpg",
+      slug: "hair-exosomes",
       area: "Scalp",
       duration: "45-60 minutes",
       recovery: "Minimal (24 hours)",
@@ -245,6 +245,30 @@ export default function TreatmentsPage() {
       sessions: "6-9 sessions recommended",
       results: "Visible improvement in 3-6 months.",
       idealFor: ["Early stage hair thinning", "Post transplant support", "Hair loss prevention"]
+    },
+    {
+      title: "PRP + Biotin",
+      desc: "Advanced synergistic therapy combining high-density autologous PRP with essential Biotin micronutrients to supercharge keratin production and follicular strength.",
+      img: "/prp-biotin.jpg",
+      slug: "prp-biotin",
+      area: "Scalp",
+      duration: "30-45 minutes",
+      recovery: "Minimal (24 hours)",
+      sessions: "4-6 sessions recommended",
+      results: "Enhanced hair shaft thickness, reduced shed rate, and visible regrowth in 3-6 months.",
+      idealFor: ["Brittle hair", "Chronic hair thinning", "Postpartum hair fall", "Follicular nutrient deficiency"]
+    },
+    {
+      title: "Korean Scalp Treatment",
+      desc: "Holistic Korean scalp spa therapy utilizing high-frequency glass ozone stimulation, botanical exfoliating scrubs, and deep nutrient infusion.",
+      img: "/korean-scalp.jpg",
+      slug: "korean-scalp-treatment",
+      area: "Scalp & Neck",
+      duration: "60-75 minutes",
+      recovery: "None",
+      sessions: "Bi-weekly or monthly sessions",
+      results: "Deep follicular sebum detox, dandruff relief, relaxed and revitalized roots.",
+      idealFor: ["Oily scalp buildup", "Dandruff & flakes", "Scalp tension", "Root weakening"]
     },
     {
       title: "Tattoo Removal",

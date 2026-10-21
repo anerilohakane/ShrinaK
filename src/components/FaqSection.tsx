@@ -82,7 +82,7 @@ export default function FaqSection() {
                 </div>
                 <div>
                   <h4 style={{ color: 'var(--primary)', fontSize: '1.1rem', fontWeight: '600', marginBottom: '0.5rem' }}>Contact Us</h4>
-                  <p style={{ color: 'var(--text-secondary)', fontSize: '0.95rem', margin: '0 0 0.3rem 0' }}>Call us: <span style={{ color: '#D55C41' }}>8979797220</span></p>
+                  <p style={{ color: 'var(--text-secondary)', fontSize: '0.95rem', margin: '0 0 0.3rem 0' }}>Call us: <a href="tel:+918979797220" style={{ color: '#D55C41', textDecoration: 'none' }}>8979797220</a> / <a href="tel:+918411900922" style={{ color: '#D55C41', textDecoration: 'none' }}>8411900922</a></p>
                   <p style={{ color: 'var(--text-secondary)', fontSize: '0.95rem', margin: 0 }}>Email: <a href="mailto:shrinakbeauty1999@gmail.com" style={{ color: 'var(--text-secondary)', textDecoration: 'none' }}>shrinakbeauty1999@gmail.com</a></p>
                 </div>
               </div>
