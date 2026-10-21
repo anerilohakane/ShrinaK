@@ -35,7 +35,7 @@ export default function Header({ theme = 'light' }: { theme?: 'light' | 'dark' }
     },
     {
       name: 'SKIN',
-      items: ['Hydra Facial', 'Hollywood Facial', 'Chemical Peels', 'Face PRP', 'Face Microneedling', 'Subcision', 'MNRF', 'Mummy Mask Facial', 'Glutathione IV Drip', 'Fat Loss IV Drip', 'Mole Removal', 'Korean Peel']
+      items: ['Hydra Facial', 'Chemical Peels', 'Face PRP', 'Face Microneedling', 'Subcision', 'MNRF', 'Mummy Mask Facial', 'Glutathione IV Drip', 'Fat Loss IV Drip', 'Mole Removal', 'Korean Peel']
     },
     {
       name: 'LASER',

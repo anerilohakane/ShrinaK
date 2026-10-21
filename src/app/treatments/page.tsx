@@ -317,18 +317,6 @@ export default function TreatmentsPage() {
       sessions: "Personalized according to clinical assessment and the prescribed formulation",
       results: "Results vary depending on individual health, lifestyle, nutrition, and the treatment formulation. IV drips are not proven to cause significant fat loss on their own.",
       idealFor: ["Individuals seeking personalized wellness support", "People addressing nutritional deficiencies, when identified", "Complementary support alongside a medically guided weight-management plan"]
-    },
-    {
-      title: "Hollywood Facial (Carbon Laser)",
-      desc: "Charcoal lotion laser peeling providing non-invasive deep pore cleansing, oil reduction, and instant Hollywood red-carpet radiance.",
-      img: "/hollywood-facial.jpg",
-      slug: "hollywood-facial",
-      area: "Face, Underarms, any selected body areas",
-      duration: "20 to 30 minutes",
-      recovery: "Minimal",
-      sessions: "Usually 3-6 sessions, depending on skin concerns.",
-      results: "Smoother, clearer & more radiant skin after treatment.",
-      idealFor: ["Oily skin", "Dull looking skin", "Congested pores", "Uneven skin texture"]
     }
   ];
 
