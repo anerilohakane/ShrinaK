@@ -43,16 +43,16 @@ export default function TreatmentsPage() {
       idealFor: ["Congested pores", "Dull skin", "Event preparation", "Uneven texture", "Dehydration"]
     },
     {
-      title: "Dermablate Laser Treatments",
-      desc: "Advanced erbium laser technology for precise skin resurfacing, scar revision, and comprehensive skin rejuvenation.",
-      img: "/treatment_hair_real.jpg",
-      slug: "dermablate-laser",
-      area: "Targeted areas / Full Face",
-      duration: "30-45 minutes",
-      recovery: "3-5 days mild redness",
+      title: "CO2 Fractional Laser",
+      desc: "Advanced fractional laser technology for deep collagen remodeling, acne scar resurfacing, and total skin renewal.",
+      img: "/co2-fractional-laser.jpg",
+      slug: "co2-fractional-laser",
+      area: "Face & Neck",
+      duration: "45-60 minutes",
+      recovery: "4-7 days micro-crusting & redness",
       sessions: "2-4 sessions",
-      results: "Dramatic scar reduction, tightened pores, and smoother skin texture",
-      idealFor: ["Acne scars", "Surgical scars", "Enlarged pores", "Skin irregularities", "Sun damage"]
+      results: "Deep structural collagen tightening, dramatic scar smoothing, and refined skin texture",
+      idealFor: ["Deep acne pits & scars", "Skin laxity", "Severe sun damage", "Coarse skin texture", "Enlarged pores"]
     },
     {
       title: "Korean Anti-Aging",
@@ -271,6 +271,18 @@ export default function TreatmentsPage() {
       idealFor: ["Oily scalp buildup", "Dandruff & flakes", "Scalp tension", "Root weakening"]
     },
     {
+      title: "Hair Microneedling",
+      desc: "Targeted scalp microneedling to stimulate dormant hair follicles, enhance topical absorption, and boost local microcirculation.",
+      img: "/hair-microneedling.jpg",
+      slug: "hair-microneedling",
+      area: "Scalp and areas affected by hair thinning",
+      duration: "30–45 minutes",
+      recovery: "1–3 days of mild redness or sensitivity",
+      sessions: "Multiple sessions recommended, depending on hair concerns and individual response",
+      results: "Gradual improvement in hair density and thickness may be seen over several months. Results vary from person to person.",
+      idealFor: ["Hair thinning and reduced hair density", "Early-stage hair loss", "Supporting selected hair restoration treatments", "Improving the appearance of thinning areas"]
+    },
+    {
       title: "Tattoo Removal",
       desc: "High-precision Q-switched laser technology safely fragmenting tattoo pigment particles for progressive fading and clearance.",
       img: "/tattoo-removal.jpg",
@@ -295,10 +307,22 @@ export default function TreatmentsPage() {
       idealFor: ["Antioxidant support", "Cellular wellness", "Fatigue recovery", "Free-radical defense"]
     },
     {
-      title: "Carbon Laser",
-      desc: "Charcoal lotion laser peeling providing non-invasive deep pore cleansing, oil reduction, and instant skin radiance.",
+      title: "Fat Loss IV Drip",
+      desc: "Tailored intravenous metabolic infusion supporting whole-body wellness, hydration, and nutritional balance alongside medically guided lifestyle plans.",
+      img: "/iv-drip.jpg",
+      slug: "fat-loss-iv-drip",
+      area: "Whole-body wellness support",
+      duration: "30–60 minutes, depending on the formulation",
+      recovery: "Usually minimal downtime; individual responses may vary",
+      sessions: "Personalized according to clinical assessment and the prescribed formulation",
+      results: "Results vary depending on individual health, lifestyle, nutrition, and the treatment formulation. IV drips are not proven to cause significant fat loss on their own.",
+      idealFor: ["Individuals seeking personalized wellness support", "People addressing nutritional deficiencies, when identified", "Complementary support alongside a medically guided weight-management plan"]
+    },
+    {
+      title: "Hollywood Facial (Carbon Laser)",
+      desc: "Charcoal lotion laser peeling providing non-invasive deep pore cleansing, oil reduction, and instant Hollywood red-carpet radiance.",
       img: "/hollywood-facial.jpg",
-      slug: "carbon-laser",
+      slug: "hollywood-facial",
       area: "Face, Underarms, any selected body areas",
       duration: "20 to 30 minutes",
       recovery: "Minimal",

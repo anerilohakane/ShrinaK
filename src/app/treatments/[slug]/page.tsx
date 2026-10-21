@@ -41,6 +41,8 @@ export default async function TreatmentDetailPage({ params }: { params: { slug: 
     imageUrl = "/prp-treatment.jpg"; // User uploaded PRP treatment image
   } else if (slug.includes('scalp')) {
     imageUrl = "/korean-scalp.jpg"; // User uploaded Korean Scalp treatment image
+  } else if (slug.includes('hair') && slug.includes('microneedling')) {
+    imageUrl = "/hair-microneedling.jpg"; // User uploaded Hair Microneedling image
   } else if (slug.includes('microneedling')) {
     imageUrl = "/microneedling.jpg"; // User uploaded Microneedling treatment image
   } else if (slug.includes('korean')) {
@@ -51,6 +53,8 @@ export default async function TreatmentDetailPage({ params }: { params: { slug: 
     imageUrl = "/hair-treatment.jpg"; // User uploaded hair treatment image
   } else if (slug.includes('tattoo')) {
     imageUrl = "/tattoo-removal.jpg"; // User uploaded Tattoo Removal image
+  } else if (slug.includes('fractional') || slug.includes('co2')) {
+    imageUrl = "/co2-fractional-laser.jpg"; // User uploaded CO2 Fractional Laser image
   } else if (slug.includes('laser')) {
     imageUrl = "/treatment_hair_real.jpg"; // User requested image for other laser treatments
   } else if (slug.includes('lip')) {
@@ -161,6 +165,20 @@ export default async function TreatmentDetailPage({ params }: { params: { slug: 
       results: 'Visible improvement in 3-6 months.',
       idealFor: ['Early stage hair thinning', 'Post transplant support', 'Hair loss prevention']
     };
+  } else if ((slug.includes('hair') && slug.includes('microneedling')) || slug === 'hair-microneedling') {
+    overview = {
+      area: 'Scalp and areas affected by hair thinning',
+      duration: '30–45 minutes',
+      recovery: '1–3 days of mild redness or sensitivity',
+      sessions: 'Multiple sessions recommended, depending on hair concerns and individual response',
+      results: 'Gradual improvement in hair density and thickness may be seen over several months. Results vary from person to person.',
+      idealFor: [
+        'Hair thinning and reduced hair density',
+        'Early-stage hair loss',
+        'Supporting selected hair restoration treatments',
+        'Improving the appearance of thinning areas'
+      ]
+    };
   } else if (slug.includes('microneedling') && !slug.includes('rf')) {
     overview = {
       area: 'Face, Lips',
@@ -196,6 +214,19 @@ export default async function TreatmentDetailPage({ params }: { params: { slug: 
       sessions: 'Monthly for optimal results',
       results: 'Immediate glow, cumulative improvement over time.',
       idealFor: ['Dull, tired skin', 'Uneven skin tone', 'Dehydrated, dry skin', 'Congested pores & blackheads']
+    };
+  } else if (slug.includes('fat-loss') || (slug.includes('fat') && slug.includes('loss'))) {
+    overview = {
+      area: 'Whole-body wellness support',
+      duration: '30–60 minutes, depending on the formulation',
+      recovery: 'Usually minimal downtime; individual responses may vary',
+      sessions: 'Personalized according to clinical assessment and the prescribed formulation',
+      results: 'Results vary depending on individual health, lifestyle, nutrition, and the treatment formulation. IV drips are not proven to cause significant fat loss on their own.',
+      idealFor: [
+        'Individuals seeking personalized wellness support',
+        'People addressing nutritional deficiencies, when identified',
+        'Complementary support alongside a medically guided weight-management plan'
+      ]
     };
   } else if (slug.includes('glutathione') || slug.includes('iv') || slug.includes('drip')) {
     overview = {
